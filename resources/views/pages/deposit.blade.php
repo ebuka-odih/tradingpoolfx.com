@@ -8,7 +8,7 @@
                     <div class="table_cellBox">
                         <div class="text_box">
                             <h2>Deposit Funds</h2>
-                            <h3>Deposit Funds into Your Whales Corp<br>
+                            <h3>Deposit Funds into Your TradingPoolFX<br>
                                 Trading Account
                             </h3>
                             <a href="register" class="red_arrow_button">open live account</a>
@@ -22,7 +22,7 @@
                 <div class="page_top_text">
                     <h2><strong>Deposit Funds to your</strong> Trading Account</h2>
                     <p><strong>Flexible funding options to get you trading faster</strong></p>
-                    <p>Whales Corp enables clients to open accounts and deposit funds in the following base currencies:<br />
+                    <p>TradingPoolFX enables clients to open accounts and deposit funds in the following base currencies:<br />
                         AUD &#8211; Dollars, USD &#8211; United States Dollar, EUR &#8211; Euro, GBP &#8211; British Pound Sterling, NZD &#8211; New Zealand Dollar, SGD &#8211; Singapore Dollar, JPY &#8211; Japanese Yen, CAD &#8211; Canadian Dollar
                     </p>
                     <div class="clear"></div>
@@ -133,7 +133,7 @@
                     <ul>
                         <li>* International bank wire transfers may incur fees charged by your financial institution as well as handling fees charged by our financial institution (NAB). Please check with your bank for more information.</li>
                         <li>¹ and ² Subject to risk management and daily limit measures.</li>
-                        <li>^ and ^^ Whales Corp may as a gesture of goodwill or as part of a promotion, cover fees charged by the merchant services provider by reimbursing them to your trading account. Contact your account manager for details.</li>
+                        <li>^ and ^^ TradingPoolFX may as a gesture of goodwill or as part of a promotion, cover fees charged by the merchant services provider by reimbursing them to your trading account. Contact your account manager for details.</li>
                         <li>³ A country surcharge may be applied depending on your local jurisdiction. Please contact Skrill for more details.</li>
                     </ul>
                 </div>
@@ -143,12 +143,12 @@
                         <li>Please note, Skrill/NETELLER is no longer available for clients residing in the following countries:</br>
                             Åland Islands, Guinea, Saint Pierre and Miquelon, Anguilla, Kiribati, Saint Vincent and the Grenadines, Bhutan, Liberia, Solomon Islands, Burundi, Mali, South Georgia and the South Sandwich Islands, Cook Islands, Marshall Islands, St. Kitts and Nevis, Equatorial Guinea, Mauritania, Svalbard and Jan Mayen, Fiji, Montserrat, Timor-Leste, French Guyana, Niue, Vanuatu, Gabon, Papua New Guinea.</br></br>
                         </li>
-                        <li>Whales Corp strictly does not accept third-party payments. All funds deposited into your trading account must be under the same name as your Whales Corp trading account. Payment from joint bank accounts or credit cards are accepted if the trading account holder is one of the beneficiaries.</li>
+                        <li>TradingPoolFX strictly does not accept third-party payments. All funds deposited into your trading account must be under the same name as your TradingPoolFX trading account. Payment from joint bank accounts or credit cards are accepted if the trading account holder is one of the beneficiaries.</li>
                         <li>We can only cover fees that we see. Other fees charged by your bank, intermediary bank and/or our financial institution (NAB) remain your responsibility.</li>
                         <li>In the unforseen circumstance where funds are not instantly uploaded to MetaTrader 4, it still remains the responsibility of the client to ensure that they have placed the required funds in their account for trading via other payment methods.</li>
                         <li>There is a restriction on first time funding of an account by card at $1,000 AUD or equivalent. If your initial deposit to your account by card is more than $1,000 AUD or equivalent, your initial deposit will be refunded back to your credit card.</li>
                         <li>There is a restricted maximum deposit of $10,000 AUD or equivalent per transaction, per card, per account a day.</li>
-                        <li>If your account was funded by credit card and a withdrawal is requested within 12 weeks, this withdrawal will be refunded back to the original credit card. The method by which we return client funds is at the sole discretion of Whales Corp.</li>
+                        <li>If your account was funded by credit card and a withdrawal is requested within 12 weeks, this withdrawal will be refunded back to the original credit card. The method by which we return client funds is at the sole discretion of TradingPoolFX.</li>
                         <li>In the circumstance of a chargeback as the client you are responsible to cover any reversed payments and/or chargeback fees. If there are insufficient funds in the trading account to cover, you agree to make deposit to your trading account to cover via bank wire transfer.</li>
                         <li>Payment options available to you may vary depending on your account base currency and your jurisdiction. Available payment options can be viewed in your client portal.</li>
                     </ul>

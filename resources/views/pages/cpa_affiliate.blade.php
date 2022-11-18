@@ -15,7 +15,7 @@
                     <div class="table_cellBox">
                         <div class="text_box">
                             <h2>CPA AFFILIATE PARTNERS</h2>
-                            <h3>Become a CPA Affiliate with Whales Corp                     <img src="../../assets/home/cpa_img7.png" alt="">
+                            <h3>Become a CPA Affiliate with TradingPoolFX                     <img src="../../assets/home/cpa_img7.png" alt="">
                             </h3>
                             <a href="register" class="red_arrow_button">BECOME A CPA AFFILIATE</a>
                         </div>
@@ -26,20 +26,20 @@
         <div class="page_content">
             <div class="inner">
                 <div class="page_top_text">
-                    <h2><strong>EARN MORE AS A Whales Corp</strong> CPA AFFILIATE PARTNER</h2>
-                    <p>Whales Corp is proud to offer an industry-leading CPA Affiliate Partnership program. As an affiliate partner, you’ll earn great commissions on referrals and receive exclusive access to highly personalised, targeted marketing products designed to unlock your earning potential.</p>
-                    <p>Also, by partnering with Whales Corp, you’re able to leverage our global reputation and strong brand recognition, offering your referrals the peace of mind that they’ll be joining an industry-leading, regulated broker.</p>
-                    <p>As a Whales Corp Affiliate Partner, you receive free access to the state-of-the-art marketing platform, CellXpert. The CellXpert platform offers partners a complete solution to serve ads, track clickthroughs and conversions, manage the performance of campaigns, and importantly, view transparent reports of your earnings.</p>
-                    <p>Best of all, our partnership programs are available to individuals and corporate clients across the globe. From forex trading specialists to social media influencers, and marketing professionals to SEO experts, our CPA Affiliate program offers unrivaled rebates to anyone who refers clients to Whales Corp.</p>
-                    <p>Become a Whales Corp Affiliate Partner today and boost your potential for big profit.</p>
+                    <h2><strong>EARN MORE AS A TradingPoolFX</strong> CPA AFFILIATE PARTNER</h2>
+                    <p>TradingPoolFX is proud to offer an industry-leading CPA Affiliate Partnership program. As an affiliate partner, you’ll earn great commissions on referrals and receive exclusive access to highly personalised, targeted marketing products designed to unlock your earning potential.</p>
+                    <p>Also, by partnering with TradingPoolFX, you’re able to leverage our global reputation and strong brand recognition, offering your referrals the peace of mind that they’ll be joining an industry-leading, regulated broker.</p>
+                    <p>As a TradingPoolFX Affiliate Partner, you receive free access to the state-of-the-art marketing platform, CellXpert. The CellXpert platform offers partners a complete solution to serve ads, track clickthroughs and conversions, manage the performance of campaigns, and importantly, view transparent reports of your earnings.</p>
+                    <p>Best of all, our partnership programs are available to individuals and corporate clients across the globe. From forex trading specialists to social media influencers, and marketing professionals to SEO experts, our CPA Affiliate program offers unrivaled rebates to anyone who refers clients to TradingPoolFX.</p>
+                    <p>Become a TradingPoolFX Affiliate Partner today and boost your potential for big profit.</p>
                     <div class="clear"></div>
                 </div>
                 <div class="pages_text_and_image_row text_and_image_position_right">
                     <div class="text_and_image_inner">
                         <div class="text_box">
                             <h3>Our Affiliate Partnership program</h3>
-                            <p>We launched the Whales Corp Affiliate Partnership program to offer our partners the opportunity to earn up to $800 CPA for each account they refer to us.</p>
-                            <p>As a partner, we make sure you’re equipped to start earning. That’s why Whales Corp Affiliate Partners are given all the tools and support needed to gain an edge over competitors, such as exclusive access to the CellXpert platform which keeps track of all the referral data including click-throughs, conversions and more importantly fully transparent commissions and CPA reporting.</p>
+                            <p>We launched the TradingPoolFX Affiliate Partnership program to offer our partners the opportunity to earn up to $800 CPA for each account they refer to us.</p>
+                            <p>As a partner, we make sure you’re equipped to start earning. That’s why TradingPoolFX Affiliate Partners are given all the tools and support needed to gain an edge over competitors, such as exclusive access to the CellXpert platform which keeps track of all the referral data including click-throughs, conversions and more importantly fully transparent commissions and CPA reporting.</p>
                             <p>Through CellXpert, all our Affiliate Partners also gain access to our suite of marketing tools, including landing pages, web banners and social media ads to help reach a greater audience and boost the potential to earn.</p>
                             <p><a href="register" class="blue_button">Get Started</a></p>
                         </div>
@@ -76,10 +76,10 @@
                 <div class="pages_text_and_image_row text_and_image_position_left">
                     <div class="text_and_image_inner">
                         <div class="text_box">
-                            <h3>The Whales Corp Affiliate Advantage</h3>
-                            <p>When you become a Whales Corp Affiliate partner you get to take advantage of some of the highest CPA payouts in the industry, up to $800 CPA per referral.</p>
+                            <h3>The TradingPoolFX Affiliate Advantage</h3>
+                            <p>When you become a TradingPoolFX Affiliate partner you get to take advantage of some of the highest CPA payouts in the industry, up to $800 CPA per referral.</p>
                             <p>Also, you can offer your clients peace of mind in the knowledge that they’re joining a regulated Forex Broker with over 300+ tradable assets.</p>
-                            <p>With all the marketing tools that you need to get started, it’s never been easier to start earning great commissions as a Whales Corp Affiliate Partner.</p>
+                            <p>With all the marketing tools that you need to get started, it’s never been easier to start earning great commissions as a TradingPoolFX Affiliate Partner.</p>
                         </div>
                         <div class="img_box" style="background-image:url('../../assets/home/cpa_img5.jpg'); background-position:center top; background-repeat:no-repeat; background-size:cover;">
                             <img src="../../assets/home/cpa_img5.jpg" alt="" />

@@ -58,7 +58,7 @@
                         <div class="tableBox">
                             <div class="table_cellBox">
                                 <div class="text_box">
-                                    <h2>Access to an automated trading system, Commodities from Whales Corp</h2>
+                                    <h2>Access to an automated trading system, Commodities from TradingPoolFX</h2>
                                     <a class="red_arrow_button" href="register">start now</a>
                                 </div>
                             </div>
@@ -443,9 +443,9 @@
             <div class="home_row2_content">
                 <div class="text_box">
                     <h2>Start Trading with a<br /><strong>leading regulated broker</strong></h2>
-                    <p>Whales Corp is a <strong><a href="index.php/home/regulation.html">regulated</a></strong>  broker, providing traders with access to the global market through top tier FX liquidity providers.</p>
-                    <p>With Whales Corp, you will experience super-fast trade execution, as well as interbank grade, RAW ECN spreads.  When combined, these elements offer clients a true institutional trading experience, across a wide range of trading instruments.</p>
-                    <h3>Gain YOUR trading advantage with Whales Corp.</h3>
+                    <p>TradingPoolFX is a <strong><a href="index.php/home/regulation.html">regulated</a></strong>  broker, providing traders with access to the global market through top tier FX liquidity providers.</p>
+                    <p>With TradingPoolFX, you will experience super-fast trade execution, as well as interbank grade, RAW ECN spreads.  When combined, these elements offer clients a true institutional trading experience, across a wide range of trading instruments.</p>
+                    <h3>Gain YOUR trading advantage with TradingPoolFX.</h3>
                 </div>
                 <div class="img_box video_home">
                     <img src="assets/home/btc3.png" alt="" width="150px" height="150px"/>
@@ -492,7 +492,7 @@
             <div class="text_box">
                 <h2>Trade with Even Lower Costs</h2>
                 <p>With our RAW ECN account, traders can experience some of the lowest trading costs in the industry. We fully understand the importance of keeping trading costs to a minimum, so you can realise greater profit.</p>
-                <p>Experience the difference with Whales Corp today.</p>
+                <p>Experience the difference with TradingPoolFX today.</p>
                 <div class="text_box_inner">
                     <a href="login">open A live account</a>
                     <img src="assets/home/wp-content/themes/vfx_new/images/home_row3_content_right_img.png" alt="" />
@@ -769,9 +769,9 @@
 
                         </div>
                         <p>
-                          <img class="video_play" src="https://traderscorp.io/assets/home/wp-content/themes/vfx_new/images/home_row5_video_youtube.png" alt=""> LIVE ON Whales Corp TV
+                          <img class="video_play" src="https://traderscorp.io/assets/home/wp-content/themes/vfx_new/images/home_row5_video_youtube.png" alt=""> LIVE ON TradingPoolFX TV
                         </p>
-                        <h6>Whales Corp News</h6>
+                        <h6>TradingPoolFX News</h6>
                     </div>
                     <div class="home_row5_video_box video_right">
 
@@ -800,7 +800,7 @@
     <!--Home Row6 开始-->
     <div class="home_row6">
         <div class="inner">
-            <h2>trade your way <strong>with Whales Corp</strong></h2>
+            <h2>trade your way <strong>with TradingPoolFX</strong></h2>
             <ul class="home_three_rows">
                 <li>
                     <div class="home_three_rows_box">
@@ -864,7 +864,7 @@
     <!--          </div>-->
     <!--          <div class="text_box">-->
     <!--              <h2>TRADE ANYWHERE, ANYTIME</h2>-->
-    <!--              <p>Perfect for both new and experienced traders who want to access the markets while on the go, the convenient MT4 and MT5 apps by MetaQuotes are fast, reliable and compatible with both Android and iOS devices.<br />All Whales Corp clients can experience the same trading functionality on their mobile device as MetaTrader for PC and Mac - such as one touch trading, a variety of order types, instant access to over 300+ tradable assets, and more.</p>-->
+    <!--              <p>Perfect for both new and experienced traders who want to access the markets while on the go, the convenient MT4 and MT5 apps by MetaQuotes are fast, reliable and compatible with both Android and iOS devices.<br />All TradingPoolFX clients can experience the same trading functionality on their mobile device as MetaTrader for PC and Mac - such as one touch trading, a variety of order types, instant access to over 300+ tradable assets, and more.</p>-->
     <!--              <p>Download MT4 or MT5 for mobile today.</p>-->
     <!--          </div>-->
     <!--    <div class="clear"></div>-->
@@ -897,7 +897,7 @@
     </style>
     <div class="home_row8">
         <div class="inner">
-            <h2 class="page_title_center">Switch to Whales Corp Today and <strong>Experience the Difference</strong></h2>
+            <h2 class="page_title_center">Switch to TradingPoolFX Today and <strong>Experience the Difference</strong></h2>
             <ul class="home_three_rows">
                 <li>
                     <div class="home_three_rows_box">

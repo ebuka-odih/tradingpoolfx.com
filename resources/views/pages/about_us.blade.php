@@ -29,7 +29,7 @@
                 <div class="tableBox">
                     <div class="table_cellBox">
                         <div class="text_box">
-                            <h2>WHO IS WHALES CORP</h2>
+                            <h2>WHO IS TRADINGPOOLFX</h2>
                             <h3>Transparent Forex Broker</h3>
                             <a href="register" class="red_arrow_button">open live account</a>
                         </div>
@@ -41,18 +41,18 @@
             <div class="inner">
                 <div class="page_top_text">
                     <h2><strong>ABOUT US</strong></h2>
-                    <p>Whales Corp was founded in 2009 by a highly-specialised team with backgrounds in Finance, FOREX and Technology. Created to help clients pursue their financial goals, we proudly offer transparent access to the FOREX market, powerful trading platforms (MT4 and MT5), exceptional execution speed, and award-winning customer service.</p>
-                    <p>Given our strong background, we have always been able to offer superior access to global FOREX markets, which is why professional and retail traders are able to notice the remarkable difference between Whales Corp and other brokers.</p>
+                    <p>TradingPoolFX was founded in 2009 by a highly-specialised team with backgrounds in Finance, FOREX and Technology. Created to help clients pursue their financial goals, we proudly offer transparent access to the FOREX market, powerful trading platforms (MT4 and MT5), exceptional execution speed, and award-winning customer service.</p>
+                    <p>Given our strong background, we have always been able to offer superior access to global FOREX markets, which is why professional and retail traders are able to notice the remarkable difference between TradingPoolFX and other brokers.</p>
                     <p>We continually strive to evolve our offering to ensure that we deliver a service that is far superior to anything else on the market.<br />
-                        Smart traders make smart decisions, so become a Whales Corp client today and experience the difference.
+                        Smart traders make smart decisions, so become a TradingPoolFX client today and experience the difference.
                     </p>
                     <div class="clear"></div>
                 </div>
                 <div class="pages_text_and_image_row text_and_image_position_right">
                     <div class="text_and_image_inner">
                         <div class="text_box">
-                            <h3>Whales Corp Values</h3>
-                            <p>At Whales Corp, it is important for us to provide complete transparency in an often cloudy industry. That is why we go over and above to make ourselves available to fulfil the needs of our clients and continue to deliver an exceptionally reliable service.</p>
+                            <h3>TradingPoolFX Values</h3>
+                            <p>At TradingPoolFX, it is important for us to provide complete transparency in an often cloudy industry. That is why we go over and above to make ourselves available to fulfil the needs of our clients and continue to deliver an exceptionally reliable service.</p>
                             <p>Understanding that our clients’ trust must be earned is what sets us apart from other brokers. As such, we stand to offer our clients the best service possible, actively promoting integrity and ethical practices throughout the FOREX industry.</p>
                             <p>Strong from our reputation of integrity, we proudly align our interests with that of our clients and hold ourselves completely accountable for our offering, ensuring our high standards are never compromised.</p>
                         </div>

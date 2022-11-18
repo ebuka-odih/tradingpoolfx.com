@@ -2,23 +2,23 @@
 <html lang="en-US">
 <head>
 
-    <title>Best Stock & Cryptocurrency Broker | Stock & Cryptocurrency Trading &amp; More | Whales Corp</title>
+    <title>Best Stock & Cryptocurrency Broker | Stock & Cryptocurrency Trading &amp; More | TradingPoolFX</title>
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Whales Corp">
+    <meta property="og:title" content="TradingPoolFX">
     <meta property="og:url" content="index-2.html">
     <meta name="twitter:text:title" content="Home">
 
-    <meta property="og:site_name" content="Whales Corp">
+    <meta property="og:site_name" content="TradingPoolFX">
 
     <meta property="og:image" content="https://www.business24-7.ae/wp-content/uploads/2019/02/9c7852c2cc7817668bfaa7c24458cd49.jpg">
 
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary">
-    <meta property="og:description" content="Best Stock & Cryptocurrency Broker | Regulated Stock & Cryptocurrency &amp; More | Whales Corp">
+    <meta property="og:description" content="Best Stock & Cryptocurrency Broker | Regulated Stock & Cryptocurrency &amp; More | TradingPoolFX">
 
-    <meta name="twitter:description" content="Best Stock & Cryptocurrency Broker | Regulated Stock & Cryptocurrency &amp; More | Whales Corp">
+    <meta name="twitter:description" content="Best Stock & Cryptocurrency Broker | Regulated Stock & Cryptocurrency &amp; More | TradingPoolFX">
 
-    <meta name="description" content="Best Stock & Cryptocurrency Broker | Regulated Stock & Cryptocurrency &amp; More | Whales Corp" />
+    <meta name="description" content="Best Stock & Cryptocurrency Broker | Regulated Stock & Cryptocurrency &amp; More | TradingPoolFX" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width; initial-scale=1, maximum-scale=1"/>
     <link rel="icon" href="assets/home/favicon.ico" type="image/x-icon" />
@@ -28,7 +28,7 @@
     <![endif]-->
 
     <!-- All In One SEO Pack 3.7.1[902,919] -->
-    <meta name="description"  content="Start trading Stock & Cryptocurrency (FX), Indicies and Commodities Today on the powerful MetaTrader 4 (MT4) platform, with fast execution &amp; tight ECN spreads, with a leading regulated Best Stock & Cryptocurrency Broker, Whales Corp." />
+    <meta name="description"  content="Start trading Stock & Cryptocurrency (FX), Indicies and Commodities Today on the powerful MetaTrader 4 (MT4) platform, with fast execution &amp; tight ECN spreads, with a leading regulated Best Stock & Cryptocurrency Broker, TradingPoolFX." />
 
     <script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"##organization","url":"#","name":"#","sameAs":[]},{"@type":"WebSite","@id":"##website","url":"#","name":"#","publisher":{"@id":"##organization"}},{"@type":"WebPage","@id":"#webpage","url":"index.html","inLanguage":"en-US","name":"#","isPartOf":{"@id":"##website"},"breadcrumb":{"@id":"#breadcrumblist"},"description":"Start trading Stock & Cryptocurrency (FX), Indicies and Commodities Today on the powerful MetaTrader 4 (MT4) platform, with fast execution &amp; tight ECN spreads, with a leading regulated Best Stock & Cryptocurrency Broker, #.","datePublished":"2019-08-30T02:00:50+00:00","dateModified":"2019-11-14T02:53:00+00:00","about":{"@id":"##organization"}},{"@type":"BreadcrumbList","@id":"#breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"#","url":"#","name":"Best Stock & Cryptocurrency Broker | Regulated Stock & Cryptocurrency &amp; More | #"}}]}]}</script>
     <!-- All In One SEO Pack -->
@@ -215,8 +215,8 @@
         <div class="header_menu_wrapper">
             <div class="inner">
                 <a class="header_logo" href="{{ route('index') }}">
-{{--                    <h4 style="font-weight: bolder; color: white; margin-top: 10px">Whales Corp</h4>--}}
-                    <img src="{{ asset('img/logo.png') }}" alt="" />
+                    <h4 style="font-weight: bolder; color: white; margin-top: 10px">TradingPoolFX</h4>
+{{--                    <img src="{{ asset('img/logo.png') }}" alt="" />--}}
 {{--                    <img height="100" width="100" src="{{ asset('img/logo.PNG') }}" alt="" />--}}
                 </a>
                 <div class="header_menu_container">
@@ -226,7 +226,7 @@
                             <div class="header_menu_tab_content" id="header_menu_contnet1">
                                 <div class="header_menu_links">
                                     <h2>Trading</h2>
-                                    <p>With over 300+ instruments such as FX pairs, Indices, Commodities and Share CFDs, trade your way with Whales Corp.</p>
+                                    <p>With over 300+ instruments such as FX pairs, Indices, Commodities and Share CFDs, trade your way with TradingPoolFX.</p>
                                     <a href="register" class="live_link">open LIVE Account</a>
                                     <a href="login">Login</a>
                                 </div>
@@ -272,7 +272,7 @@
                             <div class="header_menu_tab_content" id="header_menu_contnet3">
                                 <div class="header_menu_links">
                                     <h2>Clients</h2>
-                                    <p>Whales Corp offers clients award-winning customer service, a range of promotions, educational resources and trading tools.</p>
+                                    <p>TradingPoolFX offers clients award-winning customer service, a range of promotions, educational resources and trading tools.</p>
                                     <a href="register" class="live_link">open LIVE Account</a>
                                     <a href="login" class="demo_link">open demo Account</a>
                                 </div>
@@ -309,7 +309,7 @@
                             <div class="header_menu_tab_content" id="header_menu_contnet4">
                                 <div class="header_menu_links">
                                     <h2>About Us</h2>
-                                    <p>Whales Corp is a leading regulated Stock & Cryptocurrency broker offering traders around the world access to global markets.</p>
+                                    <p>TradingPoolFX is a leading regulated Stock & Cryptocurrency broker offering traders around the world access to global markets.</p>
                                     <a href="register" class="live_link">open LIVE Account</a>
                                     <a href="login" class="demo_link">open demo Account</a>
                                 </div>
@@ -318,8 +318,8 @@
                                         <li>
                                             <a href="javescript:void(0);">About Us</a>
                                             <ul>
-                                                <li><a href="about_us">Who is Whales Corp？</a></li>
-                                                <li><a href="awards">Whales Corp Awards</a></li>
+                                                <li><a href="about_us">Who is TradingPoolFX？</a></li>
+                                                <li><a href="awards">TradingPoolFX Awards</a></li>
                                                 <li><a href="contact">Contact Us</a></li>
                                             </ul>
                                         </li>
@@ -339,7 +339,7 @@
                             <div class="header_menu_tab_content" id="header_menu_contnet5">
                                 <div class="header_menu_links partnership_links">
                                     <h2>Partnerships</h2>
-                                    <p>Partner with Whales Corp, the industry's leading Stock & Cryptocurrency broker for IBs and CPA Affiliates and start earning more today.</p>
+                                    <p>Partner with TradingPoolFX, the industry's leading Stock & Cryptocurrency broker for IBs and CPA Affiliates and start earning more today.</p>
 
                                 </div>
                                 <div class="sub_menu_box">
@@ -442,8 +442,8 @@
                                 <li class="menu-item-has-children">
                                     <a href="javescript:void(0);">About Us</a>
                                     <ul>
-                                        <li><a href="about_us">Who is Whales Corp？</a></li>
-                                        <li><a href="awards">Whales Corp Awards</a></li>
+                                        <li><a href="about_us">Who is TradingPoolFX？</a></li>
+                                        <li><a href="awards">TradingPoolFX Awards</a></li>
                                         <li><a href="contact">Contact Us</a></li>
                                     </ul>
                                 </li>
@@ -478,8 +478,8 @@
                 <a href="contact">CONTACT US</a>
             </div>
             <a class="fixed_header_logo" href="{{ route('index') }}">
-{{--                <h4 style="font-weight: bolder; color: white; margin-top: 10px">Whales Corp</h4>--}}
-                <img src="{{ asset('img/logo.PNG') }}" alt="" />
+                <h4 style="font-weight: bolder; color: white; margin-top: 10px">TradingPoolFX</h4>
+{{--                <img src="{{ asset('img/logo.PNG') }}" alt="" />--}}
             </a>
             <div class="reg_link">
                 <a class="btn_live" href="register" >Live Account</a>
@@ -540,9 +540,9 @@
             <div class="footer_top">
                 <div class="footer_top_left">
                     <a class="footer_logo" href="{{ route('index') }}">
-{{--                        <h4 style="font-weight: bolder; color: white; margin-top: 10px">Whales Corp</h4>--}}
+                        <h4 style="font-weight: bolder; color: white; margin-top: 10px">TradingPoolFX</h4>
 
-                    <img src="{{ asset('img/logo.PNG') }}" alt="" />
+{{--                    <img src="{{ asset('img/logo.PNG') }}" alt="" />--}}
                     </a>
                     <div class="content">
                         <ul>
@@ -612,10 +612,10 @@
                 <div class="bottom">
                     <ul>
                         <li>
-                            <p>Whales Corp trading under Whales Corp, is authorised and regulated by the FCA, Securities Investment Business Law (SIBL) and is registered at Edinburg, UK.<br />Email: <a href="mailto:info@whalescorp.co"><span class="__cf_email__" data-cfemail="d5a6a0a5a5baa7a195a3b4bba1b4b2b0b3adfbb6bab8">[info@whalescorp.co]</span></a></p>
+                            <p>TradingPoolFX trading under TradingPoolFX, is authorised and regulated by the FCA, Securities Investment Business Law (SIBL) and is registered at Edinburg, UK.<br />Email: <a href="mailto:info@whalescorp.co"><span class="__cf_email__" data-cfemail="d5a6a0a5a5baa7a195a3b4bba1b4b2b0b3adfbb6bab8">[info@whalescorp.co]</span></a></p>
                         </li>
                         <li>
-                            <p>Whales Corp is authorised and regulated by the VFSC under Section 4 of the Financial Dealers Licensing Act [CAP 70] (Reg. No. 901013) and is registered at Edinburg, UK<br />Email: <a href="mailto:info@whalescorp.co"><span class="__cf_email__" data-cfemail="f5868085859a8781b583949b81949290938ddb969a98">[info@whalescorp.co]</span></a></p>
+                            <p>TradingPoolFX is authorised and regulated by the VFSC under Section 4 of the Financial Dealers Licensing Act [CAP 70] (Reg. No. 901013) and is registered at Edinburg, UK<br />Email: <a href="mailto:info@whalescorp.co"><span class="__cf_email__" data-cfemail="f5868085859a8781b583949b81949290938ddb969a98">[info@whalescorp.co]</span></a></p>
                         </li>
                     </ul>
                 </div>
@@ -623,7 +623,7 @@
         </div>
         <div class="footer_bottom_bar">
             <div class="inner">
-                <p>Copyright &copy; 2022 <strong>Whales Corp.</strong> All rights reserved.</p>
+                <p>Copyright &copy; 2022 <strong>TradingPoolFX.</strong> All rights reserved.</p>
             </div>
         </div>
     </div>

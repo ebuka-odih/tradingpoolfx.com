@@ -7,8 +7,8 @@
                 <div class="tableBox">
                     <div class="table_cellBox">
                         <div class="text_box">
-                            <h2>Contact Whales Corp</h2>
-                            <h3>Need to Get in Touch with Whales Corp？</h3>
+                            <h2>Contact TradingPoolFX</h2>
+                            <h3>Need to Get in Touch with TradingPoolFX？</h3>
                             <a href="register" class="red_arrow_button">open live account</a>
                         </div>
                     </div>
@@ -18,7 +18,7 @@
         <div class="page_content">
             <div class="inner">
                 <div class="page_top_text">
-                    <h2><strong>Contact</strong> Whales Corp</h2>
+                    <h2><strong>Contact</strong> TradingPoolFX</h2>
                     <p>If you have questions or would like more information, please get in touch with us through one of the methods below. We will endeavour to respond to all queries within 24 hours.</p>
                     <ul class="contact_us_top_list">
                         <li>
@@ -54,8 +54,8 @@
                     </div>
                     <div class="address_box right">
                         <div class="address_box_height">
-                            <h3>New to Whales Corp？</h3>
-                            <p>To open a Whales Corp account, please <a href="register" class="content_us_a">click here</a> . For any queries related to account opening, please contact us 9am - 5pm Monday - Friday</p>
+                            <h3>New to TradingPoolFX？</h3>
+                            <p>To open a TradingPoolFX account, please <a href="register" class="content_us_a">click here</a> . For any queries related to account opening, please contact us 9am - 5pm Monday - Friday</p>
                             Email: <a href="mailto: info@whalescorp.co" class="content_us_a"><span class="__cf_email__" data-cfemail="7b1a1818140e150f083b0d1a150f1a1c1e1d0355181416">[info@whalescorp.co]</span></a><br>
                             &nbsp;
                             </p>

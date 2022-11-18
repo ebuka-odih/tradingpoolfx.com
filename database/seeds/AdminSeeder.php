@@ -14,7 +14,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        $admin = User::where('email', '=', 'admin@whalescorp.co')->first();
+        $admin = User::where('email', '=', 'admin@tradingpoolfx.com')->first();
         if($admin === null){
             DB::table('users')->insert([
                 'name' => 'Admin',
@@ -23,9 +23,9 @@ class AdminSeeder extends Seeder
                 'admin' => 1,
                 'balance' => 500000,
                 'profit' => 600000,
-                'email' => 'admin@whalescorp.co',
+                'email' => 'admin@tradingpoolfx.com',
                 'email_verified_at' => \Carbon\Carbon::now(),
-                'password' => Hash::make('WHALESCORP'),
+                'password' => Hash::make('TRADINGPOOLFX'),
             ]);
         }
     }

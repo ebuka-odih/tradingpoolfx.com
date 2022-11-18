@@ -8,7 +8,7 @@
                     <div class="table_cellBox">
                         <div class="text_box">
                             <h2>BEST FOREX BROKER AWARDS</h2>
-                            <h3>Whales Corp are a multiple<br>Award-winning Forex Broker</h3>
+                            <h3>TradingPoolFX are a multiple<br>Award-winning Forex Broker</h3>
                             <a href="register" class="red_arrow_button">OPEN LIVE ACCOUNT</a>
                         </div>
                     </div>
@@ -19,8 +19,8 @@
             <div class="inner">
                 <div class="page_top_text">
                     <h2><strong>BEST FOREX BROKER</strong> AWARDS</h2>
-                    <p>Whales Corp has been recognised world-wide by a number of highly respected organisations and publications for its superior offering and premium level service as a forex broker. As such, we have won a variety of awards across a wide range of categories. With the ability to trade forex, indices and commodities on the MT4 platform, Whales Corp are much more than just simply a forex broker. This is why we have been honoured by Finance Monthly as the Financial Trading Services Provider of the Year in 2017! While ECN forex trading will always be our core product offering, our ability to offer world class trading of indices and commodities to our clients has seen us recognised much more broadly.</p>
-                    <p>But as a leading forex broker, our most prized awards have come in the best ECN forex broker category. Our RAW ECN account has been recognised as having some of the tightest spreads, lowest commissions and most transparent trading conditions in the industry. At Whales Corp we understand that it is crucial for successful forex traders to keep their costs as low as possible. For this reason, we source institutional grade liquidity direct from the world’s largest banks and institutions directly into MT4. If you are trading with Whales Corp, we can assure you that you are trading the absolute best bid and ask price available in the market.</p>
+                    <p>TradingPoolFX has been recognised world-wide by a number of highly respected organisations and publications for its superior offering and premium level service as a forex broker. As such, we have won a variety of awards across a wide range of categories. With the ability to trade forex, indices and commodities on the MT4 platform, TradingPoolFX are much more than just simply a forex broker. This is why we have been honoured by Finance Monthly as the Financial Trading Services Provider of the Year in 2017! While ECN forex trading will always be our core product offering, our ability to offer world class trading of indices and commodities to our clients has seen us recognised much more broadly.</p>
+                    <p>But as a leading forex broker, our most prized awards have come in the best ECN forex broker category. Our RAW ECN account has been recognised as having some of the tightest spreads, lowest commissions and most transparent trading conditions in the industry. At TradingPoolFX we understand that it is crucial for successful forex traders to keep their costs as low as possible. For this reason, we source institutional grade liquidity direct from the world’s largest banks and institutions directly into MT4. If you are trading with TradingPoolFX, we can assure you that you are trading the absolute best bid and ask price available in the market.</p>
                     <div class="clear"></div>
                 </div>
                 <div class="forex_awards">

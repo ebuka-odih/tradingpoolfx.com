@@ -20,7 +20,7 @@
                 <h2>WHAT IS A <strong>FOREX SWAP RATE？</strong></h2>
                 <p>When trading spot Foreign Exchange (Forex trading), all Forex trades will settle two business days from date of entry, as per market convention.</p>
                 <p>Cash Indices and Commodities will settle at the end each business day (server time 00:00).<br />
-                    Whales Corp is not involved in the physical delivery of trades, thus all positions left open at the end of the trading day will be rolled over to a new value date and will therefore have exposure to a swap charge or credit.
+                    TradingPoolFX is not involved in the physical delivery of trades, thus all positions left open at the end of the trading day will be rolled over to a new value date and will therefore have exposure to a swap charge or credit.
                 </p>
                 <p>Please note: For Forex trades held open from Wednesday to Thursday as per server time, the new value date becomes Monday, rather than the weekend. This means the rollover charge on a Wednesday evening will be three times the usual value indicated on the table.</p>
                 <p>As cash indices and commodities are same day settlement, holding trades over the weekend from Friday to Monday will carry three times the usual value as it accrues the three days of swap.</p>
