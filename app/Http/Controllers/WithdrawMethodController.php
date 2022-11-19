@@ -18,7 +18,7 @@ class WithdrawMethodController extends Controller
     public function create()
     {
        $wallets = WithdrawMethod::whereUserId(\auth()->id())->get();
-       return view('dashboard.user.account', compact('wallets'));
+       return view('dashboard.CryptoAccounts', compact('wallets'));
     }
 
 //    public function account()

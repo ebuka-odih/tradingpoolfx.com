@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <form id="change-password-form" method="post" action="{{ route('user.storePassword') }}" >
+                                        <form id="change-password-form" method="post" action="{{ route('user.updateSecurity') }}" >
                                             @csrf
                                             <div class="text-danger validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
                                                 </ul></div>

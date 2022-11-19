@@ -46,16 +46,17 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => ['auth'], 'prefix' => 'user', 'as' => 'user.'], function(){
-    
+
     Route::get('dashboard', "UserController@dashboard")->name('dashboard');
     Route::get('account/details', "UserController@wallet")->name('wallet');
     Route::get('referrals', "UserController@all_referrals")->name('all_referrals');
     Route::get('profile', 'UserController@profile')->name('profile');
     Route::patch('update/profile', 'UserController@updateProfile')->name('updateProfile');
     Route::get('edit/profile', 'UserController@editProfile')->name('editProfile');
-
     Route::get('security', 'UserController@security')->name('security');
     Route::post('update/security', "UserController@updateSecurity")->name('updateSecurity');
+
+//    Withdrawal Method
     Route::get('account', 'WithdrawMethodController@create')->name('account');
     Route::post('account', 'WithdrawMethodController@store')->name('account.store');
     Route::delete('delete/account/{id}', 'WithdrawMethodController@deleteWallet')->name('deleteWallet');

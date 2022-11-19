@@ -63,15 +63,20 @@
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-puzzle-piece"></i><a href="{{ route('user.profile') }}">My Profile</a></li>
                         <li><i class="fa fa-id-badge"></i><a href="{{ route('user.security') }}">Change Password</a></li>
-                        <li><i class="fa fa-bars"></i><a href="/Identity/Account/Manage/Email">Manage Email</a></li>
+{{--                        <li><i class="fa fa-bars"></i><a href="/Identity/Account/Manage/Email">Manage Email</a></li>--}}
                         <li>
+                            <a class="nav-link dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                <i class="fa fa-logout" style="color:#fefefe"></i>
+                                {{ __('Logout') }}
+                            </a>
 
-                            <form method="post" action="/Identity/Account/Logout">
-                                <i class="fa fa-logout" style="color:#fefefe"></i><button type="submit" class="nav-link dropdown-item" style="        color: #fefefe
-">
-                                    Logout
-                                </button>
-                                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DT1a3CTqnpCgig_T_wqfVkVFb_wx369Ka-LzjmU1gjxx_Aglg7cdC4F-amUb_QV0Js-mv4ZEiN1a6A906J36xPauJAHXEWepPE6u02KdhIvNSFyVTEt5zGCuCfazHP_mjhqf4VBA1B5OGbpMyKf-007Mx-WbaStr9MA52t62SgVYJTwcn2B8hrS-iAGa4_Thg" /></form>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+
+
                         </li>
                     </ul>
                 </li>
@@ -83,7 +88,7 @@
                         Manage Accounts
                     </a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-table"></i><a href="/Identity/Account/Manage/CryptoAccounts">My Credit Accounts</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ route('user.account') }}">My Credit Accounts</a></li>
                         <li><i class="fa fa-table"></i><a href="/Identity/Account/Manage/MyInvestments">My Investments</a></li>
                     </ul>
                 </li>
@@ -209,7 +214,24 @@
 </script>
 <script>(window.jQuery && window.jQuery.validator && window.jQuery.validator.unobtrusive||document.write("\u003Cscript src=\u0022/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-ifv0TYDWxBHzvAk2Z0n8R434FL1Rlv/Av18DXE43N/1rvHyOG4izKst0f2iSLdds\u0022\u003E\u003C/script\u003E"));</script>
 
+<script>
+    $(document).ready(function () {
+        $('#bootstrap-data-table-export').DataTable();
 
+        var planinfo = [];
+        $(".load-plan").click(function () {
+            planinfo = $(this).data("info").split("|");
+            $("#Address").val(planinfo[0].trim());
+            $("#Types").val(planinfo[1].trim());
+            if ((planinfo[2].trim()) == "True") {
+                $("#IsActive").val("Active");
+            }
+            else {
+                $("#IsActive").val("Non Active");
+            }
+        });
+    });
+</script>
 
 <script>
     $(document).ready(function () {
