@@ -689,7 +689,6 @@
     <script type='text/javascript' src="{{ asset('assets/home/wp-includes/js/wp-embed.min-ver%3d5.5.3.js') }}" id='wp-embed-js'></script>
     <script type="text/javascript">(function(){window['__CF$cv$params']={r:'61fecdd60d48c4fc',m:'415518fd3584559a78525297bc52ac055f648e98-1613054207-1800-AQ2wdbzxgNEgM6uZup6yfC3LURfHStEsFbNjBlfD/rSvmojG0QisvJMOop5B/2+M3dWz57YYt0GDzjsCmrI1dS8bCdKohaSqWghxJ2mcMV+0jeRb5lOlyXyZlh/k3e/0SA==',s:[0x5fe8a0fced,0x9f718c89c9],}})();</script>
 
-    <script src="//code.tidio.co/a6ctwkykhhr6qctwa83f6rowtjz4ue38.js" async></script>
 </body>
 
 <!-- Mirrored from traderscorp.io/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Jul 2022 19:27:20 GMT -->

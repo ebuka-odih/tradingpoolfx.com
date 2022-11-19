@@ -17,7 +17,8 @@ class AdminSeeder extends Seeder
         $admin = User::where('email', '=', 'admin@tradingpoolfx.com')->first();
         if($admin === null){
             DB::table('users')->insert([
-                'name' => 'Admin',
+                'firstname' => 'Admin',
+                'lastname' => 'Panel',
                 'status' => 1,
                 'username' =>'admin',
                 'admin' => 1,

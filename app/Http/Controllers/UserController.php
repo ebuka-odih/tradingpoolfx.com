@@ -47,7 +47,9 @@ class UserController extends Controller
     }
     protected function getData(Request $request){
         $rules = [
-            'name' => 'nullable',
+            'firstname' => 'nullable',
+            'lastname' => 'nullable',
+            'title' => 'nullable',
             'telegram' => 'nullable',
             'country' => 'nullable',
             'state' => 'nullable',
@@ -61,7 +63,7 @@ class UserController extends Controller
     public function security()
     {
         $user = Auth::user();
-        return view('dashboard.user.security', compact('user'));
+        return view('dashboard.user.ChangePassword', compact('user'));
     }
     public function storePassword(Request $request)
     {
