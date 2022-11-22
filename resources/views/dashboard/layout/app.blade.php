@@ -2,7 +2,7 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-    <title>Dashboard - Legitimatepoolfx</title>
+    <title>Dashboard - TradingPoolFX</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Legitimatepoolfx">
@@ -12,14 +12,14 @@
     <link rel="shortcut icon" href="favicon.ico">
 
 
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/normalize.css">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/themify-icons.css">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/flag-icon.min.css">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/cs-skin-elastic.css">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/bootstrap-select.less">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/scss/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/cs-skin-elastic.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-select.less') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link href="https://www.legitimatepoolfx.com/assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/lib/datatable/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/scss/style.css">

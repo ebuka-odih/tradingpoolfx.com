@@ -14,33 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'pages.index')->name('index');
-Route::view('/raw-ecn', 'pages.raw_ecn')->name('raw_ecn');
-Route::view('/standard-stp', 'pages.standard_stp')->name('standard_stp');
-Route::view('/pro-stp', 'pages.pro_ecn')->name('pro_ecn');
-Route::view('/indices', 'pages.indices')->name('indices');
-Route::view('/energy', 'pages.energy')->name('energy');
-Route::view('/soft_commodities', 'pages.soft_commodities');
-Route::view('/precious_metals', 'pages.precious_metals');
-Route::view('/us_shares', 'pages.us_shares');
-Route::view('/uk_shares', 'pages.uk_shares');
-Route::view('/trading_hours', 'pages.trading_hours');
-Route::view('/spread_commisions', 'pages.spread_commisions');
-Route::view('/leverage', 'pages.leverage');
-Route::view('/trading_hours', 'pages.trading_hours');
-Route::view('/spread_commisions', 'pages.spread_commisions');
-Route::view('/swap_rates', 'pages.swap_rates');
-Route::view('/oil_rollover', 'pages.oil_rollover');
-Route::view('/deposit', 'pages.deposit');
-Route::view('/withdrawal', 'pages.withdrawal');
-Route::view('/dispute_resolution', 'pages.dispute_resolution');
-Route::view('/referrals', 'pages.referrals');
-Route::view('/deposit_bonus', 'pages.deposit_bonus');
-Route::view('/economic_calendar', 'pages.economic_calendar');
-Route::view('/about_us', 'pages.about_us');
-Route::view('/awards', 'pages.awards');
-Route::view('/contact', 'pages.contact');
-Route::view('/regulation', 'pages.regulation');
-Route::view('/cpa_affiliate', 'pages.cpa_affiliate');
+Route::view('forex_trading', 'pages.forex_trading')->name('forex_trading');
+Route::view('crypto', 'pages.crypto')->name('crypto');
+Route::view('spreads', 'pages.spreads')->name('spreads');
+Route::view('swap', 'pages.swap')->name('swap');
+Route::view('account_type', 'pages.account_type')->name('account_type');
+Route::view('meta4', 'pages.meta4')->name('meta4');
+Route::view('meta5', 'pages.meta5')->name('meta5');
+Route::view('capital', 'pages.capital')->name('capital');
+Route::view('fxblue', 'pages.fxblue')->name('fxblue');
+
+Route::view('about', 'pages.about')->name('about');
+Route::view('plans', 'pages.plans')->name('plans');
 
 Auth::routes(['verify' => true]);
 
