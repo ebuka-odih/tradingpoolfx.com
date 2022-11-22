@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Trust InvestmentHubs</title>
+    <title>TradingPoolFX</title>
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -32,7 +32,7 @@
                 <button type="button" class="navbar-toggle collapsed bitmex-icon-menu" data-toggle="collapse" data-target=".main-navigation" aria-expanded="false"> </button>
                 <a class="navbar-brand" href="{{ route('homepage') }}">
                     <span style="color: white;font-size: 18px">
-                        <img src="{{ asset('front/new-assets/img/logo-dark.png') }}" width="50px" /> Trust InvestmentHubs</span>
+                        <img src="{{ asset('front/new-assets/img/logo-dark.png') }}" width="50px" /> TradingPoolFX</span>
 
                 </a>
             </div>
@@ -88,7 +88,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="single-footer-widget">
                     <a href="{{ route('homepage') }}">
-                        <span style="color: white;font-size: 18px"><img src="{{ asset('front/new-assets/img/logo-dark.png') }}" width="50px" /> Trust InvestmentHubs</span>
+                        <span style="color: white;font-size: 18px"><img src="{{ asset('front/new-assets/img/logo-dark.png') }}" width="50px" /> TradingPoolFX</span>
                     </a>
                 </div><!-- /.single-footer-widget -->
             </div><!-- /.col-md-3 -->
@@ -145,7 +145,7 @@
 <div class="footer-bottom">
     <div class="thm-container clearfix">
         <div class="pull-left copy-text">
-            <p>&copy; 2022 Trust InvestmentHubs. All Rights Reserved.</p>
+            <p>&copy; 2022 TradingPoolFX. All Rights Reserved.</p>
         </div><!-- /.pull-left copy-text -->
         <div class="social pull-right">
             <a href="#" class="fa fa-twitter"></a><!--
@@ -159,7 +159,7 @@
     <a href="#" class="close-button side-navigation-close-btn fa fa-times"></a><!-- /.close-button -->
     <div class="sidebar-content">
         <h3>trustinvestmenthubs.com</h3>
-        <p>Trust InvestmentHubs is an automated platform for crypto & forex trading that is focused on delivering stress-free services to its customers by using our team of professional brokers to perform trading options at their best.</p>
+        <p>TradingPoolFX is an automated platform for crypto & forex trading that is focused on delivering stress-free services to its customers by using our team of professional brokers to perform trading options at their best.</p>
         <p class="contact-info">info@trustinvestmenthubs.com <br /> +1(501)3025133</p>
         <br><a href="https://t.me/Customer247service">Telegram</a>
         <!-- /.contact-info -->

@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'pages.index')->name('index');
+Route::view('why_us', 'pages.why_us')->name('why_us');
+Route::view('legal_policy', 'pages.legal_policy')->name('legal_policy');
+Route::view('partnerships', 'pages.partnerships')->name('partnerships');
 Route::view('forex_trading', 'pages.forex_trading')->name('forex_trading');
+Route::view('broker', 'pages.broker')->name('broker');
+Route::view('faqs', 'pages.faqs')->name('faqs');
 Route::view('crypto', 'pages.crypto')->name('crypto');
 Route::view('spreads', 'pages.spreads')->name('spreads');
 Route::view('swap', 'pages.swap')->name('swap');
