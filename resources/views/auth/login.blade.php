@@ -1,59 +1,75 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sign in | Whales Corp</title>
-    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <title>TradingPoolFX | login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Custom Theme files -->
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ asset('css/style2.css') }}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- //web font -->
 </head>
+<body>
+<!-- main -->
+<div class="main-w3layouts wrapper">
+    <h1>Login</h1>
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <a href="{{ route('index') }}" >
+                <img src="" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />
+            </a>
+            <form action="{{ route('login') }}" method="POST">
+                @csrf
+                <input class="text email" type="email" name="email" placeholder="Email" required>
+                <input class="text" type="password" name="password" placeholder="Password" required>
 
-<body id="dark">
-
-<div class="vh-100 d-flex justify-content-center">
-    <div class="form-access my-auto">
-        <form action="{{ route('login') }}" method="POST">
-            @csrf
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-            <span>Sign In</span>
-            <div class="form-group">
-                <input type="email" name="email" class="form-control" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-                <input type="password" name="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="text-right">
+                <input type="submit" value="Login">
+            </form>
+            <p>  Forget Your Password?
                 @if (Route::has('password.request'))
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                        {{ __('Forgot Password?') }}
+                    <a class="txt1" href="{{ route('password.request') }}">
+                        {{ __('Reset Password Now!') }}
                     </a>
                 @endif
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-        <h2>Don't have an account? <a href="{{ route('register') }}">Sign up here</a></h2>
-    </div>
-</div>
 
-<script src="{{ asset('assets/js/jquery-3.4.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/amcharts-core.min.js') }}"></script>
-<script src="{{ asset('assets/js/amcharts.min.js') }}"></script>
-<script src="{{ asset('assets/js/custom.js') }}"></script>
+            </p>
+            <br>
+            <p>Don't have an Account? <a href="{{ route('register') }}"> Register Now!</a></p>
+
+        </div>
+    </div>
+    <!-- copyright -->
+
+    <!-- //copyright -->
+    <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<!-- //main -->
+
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 </body>
 
+<!-- Mirrored from www.metricstrade.com/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Nov 2022 23:05:19 GMT -->
 </html>
-
-

@@ -25,10 +25,12 @@
     <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/scss/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
-    <link href="https://www.legitimatepoolfx.com/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js" integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
+{{--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />--}}
+{{--    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js" integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>--}}
 </head>
 <body>
 <!-- Left Panel -->
@@ -177,18 +179,18 @@
 </div><!-- /#right-panel -->
 
 
-<script src="https://www.legitimatepoolfx.com/assets/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="{{ asset('assets/js/jquery-2.1.4.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-<script src="https://www.legitimatepoolfx.com/assets/js/plugins.js"></script>
-<script src="https://www.legitimatepoolfx.com/assets/js/main.js"></script>
+<script src="{{ asset('assets/js/plugins.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
 
-<script src="https://www.legitimatepoolfx.com/assets/js/popper.min.js"></script>
+<script src="{{ asset('assets/js/popper.min.js') }}"></script>
 
-<script src="https://www.legitimatepoolfx.com/assets/js/lib/chart-js/Chart.bundle.js"></script>
-<script src="https://www.legitimatepoolfx.com/assets/js/dashboard.js"></script>
-<script src="https://www.legitimatepoolfx.com/assets/js/widgets.js"></script>
-<script src="https://www.legitimatepoolfx.com/assets/js/lib/vector-map/jquery.vmap.js"></script>
-<script src="https://www.legitimatepoolfx.com/assets/js/lib/vector-map/jquery.vmap.min.js"></script>
+<script src="{{ asset('assets/js/Chart.bundle.js') }}"></script>
+<script src="{{ asset('assets/js/dashboard.js') }}"></script>
+<script src="{{ asset('assets/js/widgets.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.vmap.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.vmap.min.js') }}"></script>
 <script src="https://www.legitimatepoolfx.com/assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
 <script src="https://www.legitimatepoolfx.com/assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
 

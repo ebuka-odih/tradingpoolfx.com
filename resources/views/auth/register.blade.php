@@ -1,5 +1,23 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>TradingPoolFX | Registration Page</title>
 
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{{ asset('css/material-design-iconic-font.min.css') }}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
 
 <div class="main">
 
@@ -7,7 +25,7 @@
         <!-- <img src="images/signup-bg.jpg" alt=""> -->
         <div class="container">
             <div class="signup-content">
-                <a href="index.html"><img src="images/logo.png" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo"> </a>
+                <a href="{{ route('index') }}"><img src="images/logo.png" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" /> </a>
                 <h3>Registration Form</h3>
                 <form class="account-form" id="recaptchaForm" action="https://www.metricstrade.com/register.php" method="POST" enctype="multipart/form-data">
 
@@ -16,26 +34,30 @@
                         <label class="fixlabel" for="InputFirstname">
                             First Name
                         </label>
-                        <input type="text" class="form-input" id="InputFirstname" name="first_name" placeholder="First Name" required="">
+                        <input type="text" class="form-input" id="InputFirstname" name="first_name"
+                               placeholder="First Name"  required="">
                     </div>
                     <div class="form-group">
                         <label class="fixlabel" for="lastname">
                             Last Name
                         </label>
-                        <input type="text" class="form-input" id="lastname" name="last_name" placeholder="Last Name" required="">
+                        <input type="text" class="form-input" id="lastname" name="last_name"
+                               placeholder="Last Name"  required="">
                     </div>
 
                     <div class="form-group">
                         <label class="fixlabel" for="email1">
                             Username
                         </label>
-                        <input type="text" id="exampleInputUsername" name="username" class="form-input" placeholder="Username">
+                        <input type="text" id="exampleInputUsername" name="username"
+                               class="form-input" placeholder="Username">
                     </div>
                     <div class="form-group">
                         <label class="fixlabel" for="email1">
                             E-mail Address
                         </label>
-                        <input type="email" class="form-input" id="email" name="email" placeholder="E-mail Address" value="" required="">
+                        <input type="email" class="form-input" id="email" name="email"
+                               placeholder="E-mail Address" value="" required="">
                     </div>
 
 
@@ -43,8 +65,8 @@
                         <label class="fixlabel" for="email1">
                             Country
                         </label>
-                        <select name="country" class="form-input" placeholder="select country">
-                            <option value="select" selected="">- Select Country - </option>
+                        <select name="country"  class="form-input" placeholder="select country">
+                            <option value="select" selected>- Select Country - </option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
@@ -296,7 +318,7 @@
 
 
                         <select name="security_question" id="" class="form-input">
-                            <option value="select" disabled="" selected="">Choose Your Security Question</option>
+                            <option value="select" disabled selected>Choose Your Security Question</option>
 
                             <option value="What is the name of your first pet?">What is the name of your first pet?</option>
                             <option value="What was your first car?">What was your first car?</option>
@@ -315,28 +337,29 @@
                         <label for="">Security Answer</label>
 
 
-                        <input type="text" class="form-input" id="phone" name="security_answer" placeholder="Security Answer" required="">
+                        <input type="text" class="form-input" id="phone" name="security_answer" placeholder="Security Answer" required>
 
                     </div>
                     <div class="form-group">
                         <label class="fixlabel" for="pass1">
                             Wallet Address
                         </label>
-                        <input type="text" name="wallet" class="form-input" placeholder="Crypto wallet address (optional)">
+                        <input type="text" name="wallet" class="form-input"
+                               placeholder="Crypto wallet address (optional)">
                     </div>
 
                     <div class="form-group">
                         <label class="fixlabel" for="pass1">
                             Referal Code
                         </label>
-                        <input type="text" name="code" class="form-input" value="" placeholder="Referal Code(optional)">
+                        <input type="text"  name="code" class="form-input" value="" placeholder="Referal Code(optional)"  />
                     </div>
 
                     <div class="form-group">
                         <label class="fixlabel" for="pass1">
                             Password
                         </label>
-                        <input type="text" class="form-input" name="password" id="password" placeholder="Password">
+                        <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
                         <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                     </div>
 
@@ -344,7 +367,8 @@
                         <label class="fixlabel" for="pass1">
                             Retype Password
                         </label>
-                        <input type="password" name="password2" class="form-input" placeholder="Retype Password">
+                        <input type="password" name="password2" class="form-input"
+                               placeholder="Retype Password">
                     </div>
 
 
@@ -361,3 +385,16 @@
     </section>
 
 </div>
+
+<!-- JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+<script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+<!-- Mirrored from www.metricstrade.com/register.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Nov 2022 23:05:16 GMT -->
+</html>
