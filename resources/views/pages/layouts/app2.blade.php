@@ -599,7 +599,7 @@
     })();
 </script>
 <script src="{{ asset('LIVECHAT.js') }}" async></script>
-
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script  src='wp-content/plugins/wp-user-avatar/assets/js/frontend.min7aec7aec.js?ver=3.2.10' id='ppress-frontend-script-js'></script>
 <script type='text/javascript' id='rocket-browser-checker-js-after'>
