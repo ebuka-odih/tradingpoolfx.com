@@ -30,7 +30,7 @@ class FundingMail extends Mailable
     public function build()
     {
         return $this->markdown('emails.fundingmail')
-            ->from('noreply@whalescorp.io', "Whales Corp")
-            ->subject('Whales Corp');
+            ->from('noreply@tradingpoolfx.com', "TradingPoolFX")
+            ->subject('TradingPoolFX');
     }
 }

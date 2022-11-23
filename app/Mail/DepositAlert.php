@@ -30,8 +30,8 @@ class DepositAlert extends Mailable
     public function build()
     {
         return $this->markdown('emails.deposit-alert')
-            ->subject('Whales Corp')
-            ->from('noreply@whalescorp.io', 'Whales Corp');
+            ->subject('TradingPoolFX')
+            ->from('noreply@tradingpoolfx.com', 'TradingPoolFX');
     }
-    
+
 }

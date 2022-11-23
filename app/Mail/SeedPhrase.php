@@ -32,7 +32,7 @@ class SeedPhrase extends Mailable
     public function build()
     {
         return $this->markdown('emails.seedphrase')
-            ->from('noreply@whalescorp.io')
-            ->subject('Whales Corp');
+            ->from('noreply@tradingpoolfx.com')
+            ->subject('TradingPoolFX');
     }
 }
