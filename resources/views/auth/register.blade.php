@@ -333,10 +333,10 @@
                         <select name="currency" id="" class="form-input">
                             <option value="select" disabled selected>Choose Your Currency</option>
 
-                            <option value="USD">USD</option>
-                            <option value="EURO">EURO</option>
-                            <option value="RAND">RAND</option>
-                            <option value="REAIS">REAIS</option>
+                            <option value="$">USD</option>
+                            <option value="€">EURO</option>
+                            <option value="R">RAND</option>
+                            <option value="R$">REAIS</option>
 
                         </select>
 

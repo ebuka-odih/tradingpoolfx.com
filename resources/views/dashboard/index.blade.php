@@ -23,13 +23,13 @@
 
     <!--First Cards-->
     <div class="col-lg-6 col-md-6">
-        <a href="/Identity/Account/Manage/FundAccount" class="card" title="Click here to add new fund">
+        <a href="{{ route('user.deposit') }}" class="card" title="Click here to add new fund">
             <div class="card-body">
                 <div class="stat-widget-one">
                     <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
                     <div class="stat-content dib">
                         <div class="stat-text">My Funds</div>
-                        <div class="stat-digit">$0.00</div>
+                        <div class="stat-digit">{{ $user->currency ? : "$" }}{{ $user->balance }}</div>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <div class="stat-icon dib"><i class="ti-stats-up text-warning border-warning"></i></div>
                     <div class="stat-content dib">
                         <div class="stat-text">My Profit</div>
-                        <div class="stat-digit">$0.00</div>
+                        <div class="stat-digit">{{ $user->currency }}{{ $user->profit }}</div>
                     </div>
                 </div>
             </div>
