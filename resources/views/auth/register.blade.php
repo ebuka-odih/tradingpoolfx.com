@@ -40,6 +40,8 @@
                             </ul>
                         </div>
                     @endif
+                    <input type="hidden" name="referred_by" value="{{ request()->id}}" />
+
 
                     <div class="form-group">
                         <label class="fixlabel" for="InputFirstname">
