@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/material-design-iconic-font.min.css') }}">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -25,23 +25,34 @@
         <!-- <img src="images/signup-bg.jpg" alt=""> -->
         <div class="container">
             <div class="signup-content">
-                <a href="{{ route('index') }}"><img src="images/logo.png" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" /> </a>
+                <a href="{{ route('index') }}">
+{{--                    <img src="images/logo.png" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />--}}
+                </a>
                 <h3>Registration Form</h3>
-                <form class="account-form" id="recaptchaForm" action="https://www.metricstrade.com/register.php" method="POST" enctype="multipart/form-data">
-
+                <form class="account-form" id="recaptchaForm" action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
 
                     <div class="form-group">
                         <label class="fixlabel" for="InputFirstname">
                             First Name
                         </label>
-                        <input type="text" class="form-input" id="InputFirstname" name="first_name"
+                        <input type="text" class="form-input" id="InputFirstname" name="firstname"
                                placeholder="First Name"  required="">
                     </div>
                     <div class="form-group">
                         <label class="fixlabel" for="lastname">
                             Last Name
                         </label>
-                        <input type="text" class="form-input" id="lastname" name="last_name"
+                        <input type="text" class="form-input" id="lastname" name="lastname"
                                placeholder="Last Name"  required="">
                     </div>
 
@@ -314,46 +325,26 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="" class="fixlabel">Security Question</label>
+                        <label for="" class="fixlabel">Currency</label>
 
 
                         <select name="security_question" id="" class="form-input">
-                            <option value="select" disabled selected>Choose Your Security Question</option>
+                            <option value="select" disabled selected>Choose Your Currency</option>
 
-                            <option value="What is the name of your first pet?">What is the name of your first pet?</option>
-                            <option value="What was your first car?">What was your first car?</option>
-                            <option value="What elementary school did you attend?">What elementary school did you attend?</option>
-                            <option value="What is the name of the town where you were born?">What is the name of the town where you were born?</option>
-                            <option value="What is the name of the road you grew up on?">What is the name of the road you grew up on?</option>
-                            <option value="What is your mothers maiden name?">What is your mother's maiden name?</option>
-                            <option value="What was the name of your first/current/favorite pet?">What was the name of your first/current/favorite pet?</option>
-                            <option value="What was the first company that you worked for?">What was the first company that you worked for?</option>
-                            <option value="Where did you meet your spouse?">Where did you meet your spouse?</option>
+                            <option value="USD">USD</option>
+                            <option value="EURO">EURO</option>
+                            <option value="RAND">RAND</option>
 
                         </select>
 
                     </div>
-                    <div class="form-group">
-                        <label for="">Security Answer</label>
 
 
-                        <input type="text" class="form-input" id="phone" name="security_answer" placeholder="Security Answer" required>
 
-                    </div>
-                    <div class="form-group">
-                        <label class="fixlabel" for="pass1">
-                            Wallet Address
-                        </label>
-                        <input type="text" name="wallet" class="form-input"
-                               placeholder="Crypto wallet address (optional)">
-                    </div>
 
-                    <div class="form-group">
-                        <label class="fixlabel" for="pass1">
-                            Referal Code
-                        </label>
-                        <input type="text"  name="code" class="form-input" value="" placeholder="Referal Code(optional)"  />
-                    </div>
+
+
+
 
                     <div class="form-group">
                         <label class="fixlabel" for="pass1">
@@ -367,7 +358,7 @@
                         <label class="fixlabel" for="pass1">
                             Retype Password
                         </label>
-                        <input type="password" name="password2" class="form-input"
+                        <input type="password" name="password_confirmation" class="form-input"
                                placeholder="Retype Password">
                     </div>
 
@@ -378,7 +369,7 @@
 
                 </form>
                 <p class="loginhere">
-                    Have already an account ? <a href="login.html" class="loginhere-link">Login here</a>
+                    Have already an account ? <a href="{{ route('login') }}" class="loginhere-link">Login here</a>
                 </p>
             </div>
         </div>

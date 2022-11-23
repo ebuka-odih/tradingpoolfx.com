@@ -22,22 +22,24 @@ class SubscriptionController extends Controller
            'amount' => 'required'
         ]);
         $sub_id = $request->subscription_id;
-        $sub_plan = Subscription::findOrFail($sub_id);
+        $plan_id = Subscription::findOrFail($sub_id);
         $sub = new Subscribe();
-        if ($request->amount > \auth()->user()->balance){
-            return redirect()->back()->with('insufficient', "Insufficient balance! proceed to make deposit");
-        }else{
-
-            if ($request->amount < $sub_plan->amount){
-                return redirect()->back()->with('declined', "Amount entered is less than the minimum amount");
+        if ($request->amount < \auth()->user()->balance){
+//            $plan_id = Package::findOrFail($request->package_id);
+            if ($request->get('amount') < $plan_id->min_deposit || $request->get('amount') > $plan_id->max_deposit)
+            {
+                return redirect()->back()->with('declined', "Please enter the amount within the Min/Max Deposit");
+            }else{
+                $sub->subscription_id = $request->subscription_id;
+                $sub->user_id = Auth::id();
+                $sub->amount = $request->amount;
+                $sub->status = 1;
+                $sub->save();
+                return redirect()->route('user.investmentDetails', $sub->id);
             }
-            $sub->amount = $request->amount;
-            $sub->user_id = Auth::id();
-            $sub->subscription_id = $request->subscription_id;
-            $sub->status = 1;
-            $sub->save();
-            return redirect()->route('user.Subsuccess', $sub->id);
         }
+        return redirect()->back()->with('insufficient', "Sorry! You do not have upto that amount in your balance");
+
 
     }
 

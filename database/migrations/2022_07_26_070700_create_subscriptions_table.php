@@ -17,9 +17,10 @@ class CreateSubscriptionsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->double('amount');
-            $table->string('term_days');
-            $table->string('total_return');
+            $table->float('daily_interest');
+            $table->integer('term_days');
+            $table->double('min_deposit')->nullable();
+            $table->double('max_deposit')->nullable();
         });
     }
 

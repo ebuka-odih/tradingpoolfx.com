@@ -21,9 +21,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-select.less') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link href="https://www.legitimatepoolfx.com/assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/css/lib/datatable/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://www.legitimatepoolfx.com/assets/scss/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -100,7 +102,7 @@
                         Transactions
                     </a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-th"></i><a href="/Identity/Account/Manage/FundAccount">Fund Account</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{{ route('user.deposit') }}">Fund Account</a></li>
                         <li><i class="menu-icon fa fa-th"></i><a href="/Identity/Account/Manage/InvestFund">Invest Fund</a></li>
                         <li><i class="menu-icon fa fa-th"></i><a href="/Identity/Account/Manage/RefundInvestment">Refund Investment</a></li>
                     </ul>
@@ -137,7 +139,7 @@
                 <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
                 <div class="header-left">
                     <h5>
-                        <i class="fa fa-user"></i> Welcome, {{ auth()->user()->name }}
+                        <i class="fa fa-user"></i> Welcome, {{ auth()->user()->fullname() }}
                     </h5>
                     <div id="ytWidget" style="display:none;"></div>
                     <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=tr&widgetTheme=dark&autoMode-true" type="text/javascript"></script>
@@ -191,6 +193,7 @@
 <script src="{{ asset('assets/js/widgets.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.vmap.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.vmap.min.js') }}"></script>
+
 <script src="https://www.legitimatepoolfx.com/assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
 <script src="https://www.legitimatepoolfx.com/assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
 

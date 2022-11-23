@@ -45,17 +45,32 @@
                                 </div>
                             </div>
                             <div id="bootstrap-data-table-export_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+                                @if(session()->has('success'))
+                                    <div class="alert alert-success">
+                                        {{ session()->get('success') }}
+                                    </div>
+                                @endif
 
-                                <table id="bootstrap-data-table-export" class="table table-striped table-bordered dataTable no-footer" role="grid" aria-describedby="bootstrap-data-table-export_info">
-                                    <thead>
-                                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S/N: activate to sort column descending" style="width: 103px;">S/N</th><th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Account Address: activate to sort column ascending" style="width: 320px;">Account Address</th><th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Currency: activate to sort column ascending" style="width: 195px;">Currency</th><th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 151px;">Status</th><th style="width: 63px;" class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending">Action</th></tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="odd">
-                                        <td valign="top" colspan="5" class="dataTables_empty">No data available in table</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                    <table id="" class="table table-striped table-bordered dataTable no-footer" role="grid" aria-describedby="bootstrap-data-table-export_info">
+                                        <thead>
+                                        <tr role="row">
+                                            <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Account Address: activate to sort column ascending" style="width: 320px;">Account Address</th>
+                                            <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Currency: activate to sort column ascending" style="width: 195px;">Currency</th>
+                                            <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 151px;">Status</th>
+                                            <th style="width: 63px;" class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending">Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($wallets as $item)
+                                        <tr class="odd">
+                                            <td>{{ $item->address }}</td>
+                                            <td>{{ $item->currency }}</td>
+                                            <td>{!! $item->status() !!}</td>
+                                            <td><a href="" class="btn btn-primary">Update Status</a></td>
+                                        </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
 
                             </div>
                         </div>
@@ -83,7 +98,8 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <form method="post" novalidate="novalidate">
+                <form method="post" action="{{ route('user.account.store') }}" novalidate="novalidate">
+                    @csrf
                     <div class="modal-body">
                         <p class="small">Create or edit crypto accounts using this form, please ensure to fill out all fields</p>
 
@@ -91,7 +107,7 @@
                             <div class="col-sm-12">
                                 <div class="form-group form-group-default">
                                     <label for="Address">Account Address</label>
-                                    <input required="" id="Address" type="text" class="form-control" placeholder="Account Address" data-val="true" data-val-required="The Address field is required." name="Address" value="">
+                                    <input required="" id="Address" type="text" class="form-control" placeholder="Account Address" data-val="true" data-val-required="The Address field is required." name="address" value="">
                                     <span class="text-danger field-validation-valid" data-valmsg-for="Address" data-valmsg-replace="true"></span>
                                 </div>
                             </div>
@@ -99,7 +115,7 @@
                             <div class="col-md-12">
                                 <div class="form-group form-group-default">
                                     <label for="Types">Currency</label>
-                                    <input id="Types" required="" type="text" class="form-control" placeholder="Currency" data-val="true" data-val-required="The Types field is required." name="Types" value="">
+                                    <input id="Types" required="" type="text" class="form-control" placeholder="Currency" data-val="true" data-val-required="The Types field is required." name="currency" value="">
                                     <span class="text-danger field-validation-valid" data-valmsg-for="Types" data-valmsg-replace="true"></span>
                                 </div>
                             </div>
@@ -107,9 +123,9 @@
                             <div class="col-md-12">
                                 <div class="form-group form-group-default">
                                     <label for="IsActive">Status</label>
-                                    <select id="IsActive" required="" class="form-control" placeholder="IsActive" data-val="true" data-val-required="The IsActive field is required." name="IsActive">
-                                        <option value="Active">Active</option>
-                                        <option value="Non Active">Non Active</option>
+                                    <select id="IsActive" required="" class="form-control" placeholder="IsActive" data-val="true" data-val-required="The IsActive field is required." name="status">
+                                        <option value="1">Active</option>
+                                        <option value="0">Non Active</option>
                                     </select>
                                     <span class="text-danger field-validation-valid" data-valmsg-for="IsActive" data-valmsg-replace="true"></span>
                                 </div>

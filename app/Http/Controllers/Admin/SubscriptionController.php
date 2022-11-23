@@ -62,9 +62,10 @@ class SubscriptionController extends Controller
     {
         $rules = [
             'name' => 'required',
-            'amount' => 'required',
+            'min_deposit' => 'nullable',
+            'max_deposit' => 'nullable',
             'term_days' => 'required',
-            'total_return' => 'required',
+            'daily_interest' => 'nullable',
         ];
         return $request->validate($rules);
     }

@@ -35,23 +35,27 @@
                             <div class="col-lg-8 offset-lg-2">
 
                                 <div class="row">
-                                    <div class="mb-4 col-lg-6">
+                                    <div class="mb-4 col-lg-4">
                                         <label class="form-label" for="example-text-input">Name</label>
                                         <input type="text" class="form-control" id="example-text-input" name="name" >
                                     </div>
-                                    <div class="mb-4 col-lg-6">
+                                    <div class="mb-4 col-lg-4">
                                         <label class="form-label" for="example-email-input">Term Days</label>
                                         <input type="number" class="form-control" id="example-email-input" name="term_days" >
+                                    </div>
+                                    <div class="mb-4 col-lg-4">
+                                        <label class="form-label" for="example-email-input">Daily Interest</label>
+                                        <input type="number" class="form-control" id="example-email-input" name="daily_interest" >
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="mb-4 col-lg-6">
-                                        <label class="form-label" for="example-password-input">Total Return</label>
-                                        <input type="text" class="form-control" id="example-password-input" name="total_return" >
+                                        <label class="form-label" for="example-password-input">Min Amount</label>
+                                        <input type="text" class="form-control" id="example-password-input" name="min_amount" >
                                     </div>
                                     <div class="mb-4 col-lg-6">
-                                        <label class="form-label" for="example-password-input">Min Amount</label>
-                                        <input type="number" class="form-control" id="example-password-input" name="amount" >
+                                        <label class="form-label" for="example-password-input">Max Amount</label>
+                                        <input type="number" class="form-control" id="example-password-input" name="max_amount" >
                                     </div>
                                 </div>
 

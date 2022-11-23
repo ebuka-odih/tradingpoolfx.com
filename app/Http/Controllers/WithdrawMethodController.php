@@ -33,14 +33,15 @@ class WithdrawMethodController extends Controller
         $data = $this->getBTCData($request);
         $data['user_id'] = Auth::id();
         WithdrawMethod::create($data);
-        return redirect()->back();
+        return redirect()->back()->with('success', "Added Successfully");
     }
 
     protected function getBTCData(Request $request)
     {
         $rules = [
-            'name' => 'required',
-            'value' => 'nullable',
+            'currency' => 'required',
+            'address' => 'nullable',
+            'status' => 'nullable',
         ];
         return $request->validate($rules);
     }

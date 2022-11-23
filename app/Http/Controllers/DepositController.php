@@ -27,7 +27,7 @@ class DepositController extends Controller
     public function deposit()
     {
         $wallets = PaymentMethod::all();
-        return view('dashboard.deposit.deposit', compact('wallets'));
+        return view('dashboard.transactions.fund', compact('wallets'));
     }
 
     public function processDeposit(Request $request)
@@ -53,7 +53,7 @@ class DepositController extends Controller
     public function payment($id)
     {
         $deposit = Deposit::findOrFail($id);
-        return view('dashboard.deposit.payment', compact('deposit'));
+        return view('dashboard.transactions.payment', compact('deposit'));
     }
 
     public function processPayment(Request $request)
@@ -71,7 +71,7 @@ class DepositController extends Controller
             $id = $request->deposit_id;
             $deposit = Deposit::findOrFail($id);
             $deposit->update(['reference' => $input['imagename'] ]);
-            Mail::to('admin@whalescorp.io')->send(new AdminDepositAlert($deposit));
+            Mail::to('admin@tradingpoolfx.com')->send(new AdminDepositAlert($deposit));
             return redirect()->back()->with('success', "Transaction Sent, Awaiting Approval ");
         }
         return redirect()->back()->with('declined', "Please Upload Your Payment Screenshot ");
