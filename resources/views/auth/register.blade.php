@@ -336,7 +336,7 @@
                             <option value="USD">USD</option>
                             <option value="EURO">EURO</option>
                             <option value="RAND">RAND</option>
-                            <option value="REALS">REALS</option>
+                            <option value="REAIS">REAIS</option>
 
                         </select>
 
