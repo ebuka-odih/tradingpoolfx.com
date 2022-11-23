@@ -328,12 +328,13 @@
                         <label for="" class="fixlabel">Currency</label>
 
 
-                        <select name="security_question" id="" class="form-input">
+                        <select name="currency" id="" class="form-input">
                             <option value="select" disabled selected>Choose Your Currency</option>
 
                             <option value="USD">USD</option>
                             <option value="EURO">EURO</option>
                             <option value="RAND">RAND</option>
+                            <option value="REALS">REALS</option>
 
                         </select>
 
