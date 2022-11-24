@@ -70,7 +70,7 @@
                                     <label class="form-label" for="example-text-input">User</label>
                                     <select name="user_id" id="" class="form-control">
                                         @foreach($users as $item)
-                                            <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                            <option value="{{ $item->id }}">{{ $item->fullname() }}</option>
                                         @endforeach
                                     </select>
                                 </div>

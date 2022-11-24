@@ -1,7 +1,6 @@
 @extends('admin.layout.app')
 @section('content')
 
-
     <main id="main-container">
 
         <!-- Hero -->
@@ -78,7 +77,5 @@
         </div>
         <!-- END Page Content -->
     </main>
-
-
 
 @endsection
