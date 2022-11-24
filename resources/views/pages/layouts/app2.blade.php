@@ -300,6 +300,7 @@
                         <a href="{{ route('index') }}">
                             <h3 style="font-weight: bolder; color: white">TradingPoolFX</h3>
                         </a>
+                        <div id="google_translate_element"></div>
                     </div>
                     <div class="col-lg-5 menu menu21 ">
                         <div class="menu-new-menu-container"><ul id="menu-new-menu" class="menu"><li id="menu-item-3160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3160"><a>Markets</a>
@@ -371,45 +372,49 @@
                                             <ul class="sub-menu">
 
                                                 <li id="menu-item-3334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3334"><a href="{{ route('faqs') }}">FAQs</a></li>
-                                                <li id="menu-item-3338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3338"><a href="contact.html">Contact Us</a></li>
+                                                <li id="menu-item-3338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3338"><a href="contact">Contact Us</a></li>
                                             </ul>
                                         </li>
                                         <li id="menu-item-3190" class="green_menu menu-item menu-item-type-custom menu-item-object-custom menu-item-3190"><a href="{{ route('register') }}">Create Account</a></li>
                                         <li id="menu-item-3187" class="blue_menu menu-item menu-item-type-custom menu-item-object-custom menu-item-3187"><a href="{{ route('login') }}">Login</a></li>
                                     </ul>
                                 </li>
-                            </ul></div>
+                            </ul>
+                        </div>
+
                         <div class="search-wrapper">
                             <div class="inner_tooltip">
 
                             </div>
                             <span class="arrow-wrap">
-                <span class="avia-arrow"></span>
-              </span>
+                            <span class="avia-arrow"></span>
+                          </span>
                         </div>
                     </div>
                     <div class="col-lg-5 col-6 col-md-6 rightbuttons">
                         <div class="buttonsrighth">
-                            <div id="right-menu-navigation" class="navbar-collapse"><ul id="right-nav" class="header_buttons">
+                            <div id="right-menu-navigation" class="navbar-collapse">
+                                <ul id="right-nav" class="header_buttons">
                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="account menu-item menu-item-type-custom menu-item-object-custom menu-item-12 nav-item"><a title="Log in" href="loan_form" class="nav-link">Loans</a></li>
                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="account menu-item menu-item-type-custom menu-item-object-custom menu-item-12 nav-item"><a title="Log in" href="{{ route('login') }}" class="nav-link">Log in</a></li>
                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="register menu-item menu-item-type-custom menu-item-object-custom menu-item-13 nav-item"><a style="background-color: #2dba69" title="Create Account" href="{{ route('register') }}" class="nav-link">Create Account</a></li>
-                                </ul></div>           </div>
+{{--                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="register menu-item menu-item-type-custom menu-item-object-custom menu-item-13 nav-item"> <div id="google_translate_element"></div></li>--}}
+
+                                </ul>
+                            </div>
+
+                        </div>
+
                         <!-- <span class="langwrapper"> -->
                         <div class="langbarwrap">
                             <ul class="langmenu-wrap">
-                                <a class="dropdown_langbar_choose" href="#"><img width="31" height="31" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2031%2031'%3E%3C/svg%3E" alt="" title="" data-lazy-src="wp-content/themes/eightcap/images/flags/au.png" /><noscript><img width="31" height="31" src="wp-content/themes/eightcap/images/flags/au.png" alt="" title="" /></noscript>  <img width="14" height="8" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2014%208'%3E%3C/svg%3E" class="langdropdownarrow" alt="" title="" data-lazy-src="wp-content/themes/eightcap/images/langmenu.png" /><noscript>
-                                        <img width="14" height="8" src="wp-content/themes/eightcap/images/langmenu.png" class="langdropdownarrow" alt="" title="" /></noscript></a>
+{{--                                <a class="dropdown_langbar_choose" href="#"><img width="31" height="31" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2031%2031'%3E%3C/svg%3E" alt="" title="" data-lazy-src="wp-content/themes/eightcap/images/flags/au.png" /><noscript><img width="31" height="31" src="wp-content/themes/eightcap/images/flags/au.png" alt="" title="" /></noscript>  <img width="14" height="8" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2014%208'%3E%3C/svg%3E" class="langdropdownarrow" alt="" title="" data-lazy-src="wp-content/themes/eightcap/images/langmenu.png" /><noscript>--}}
+{{--                                        <img width="14" height="8" src="wp-content/themes/eightcap/images/langmenu.png" class="langdropdownarrow" alt="" title="" /></noscript>--}}
+{{--                                </a>--}}
+
+{{--                                <div id="google_translate_element"></div>--}}
                                 <div class="dropdown_langbar_menu">
-                                    <div id="google_translate_element"></div>
 
-                                    <script type="text/javascript">
-                                        function googleTranslateElementInit() {
-                                            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-                                        }
-                                    </script>
-
-                                    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                                 </div>
                             </ul>
                         </div>
@@ -599,7 +604,15 @@
     })();
 </script>
 <script src="{{ asset('LIVECHAT.js') }}" async></script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+{{--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>--}}
 
 <script  src='wp-content/plugins/wp-user-avatar/assets/js/frontend.min7aec7aec.js?ver=3.2.10' id='ppress-frontend-script-js'></script>
 <script type='text/javascript' id='rocket-browser-checker-js-after'>
