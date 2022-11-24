@@ -36,7 +36,7 @@ class SubscribeController extends Controller
                 $sub->amount = $request->amount;
                 $sub->status = 1;
                 $sub->save();
-                return redirect()->route('user.investmentDetails', $sub->id);
+                return redirect()->route('user.Investdetails', $sub->id);
             }
         }
         return redirect()->back()->with('insufficient', "Sorry! You do not have upto that amount in your balance");
