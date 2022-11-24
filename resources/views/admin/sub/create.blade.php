@@ -51,11 +51,11 @@
                                 <div class="row">
                                     <div class="mb-4 col-lg-6">
                                         <label class="form-label" for="example-password-input">Min Amount</label>
-                                        <input type="text" class="form-control" id="example-password-input" name="min_amount" >
+                                        <input type="text" class="form-control" id="example-password-input" name="min_deposit" >
                                     </div>
                                     <div class="mb-4 col-lg-6">
                                         <label class="form-label" for="example-password-input">Max Amount</label>
-                                        <input type="number" class="form-control" id="example-password-input" name="max_amount" >
+                                        <input type="number" class="form-control" id="example-password-input" name="max_deposit" >
                                     </div>
                                 </div>
 
@@ -84,9 +84,10 @@
                         <tr>
                             <th class="text-center" style="width: 50px;">#</th>
                             <th>Name</th>
-                            <th>Term Days </th>
-                            <th>Total Return </th>
-                            <th>Amount</th>
+                            <th>Term Day(s)</th>
+                            <th>Daily Interest(%)</th>
+                            <th >Min Deposit</th>
+                            <th >Max Deposit</th>
                             <th class="text-center" style="width: 100px;">Actions</th>
                         </tr>
                         </thead>
@@ -101,10 +102,13 @@
                                     {{ $item->term_days }} Day(s)
                                 </td>
                                 <td class="fw-semibold">
-                                    {{ $item->total_return }}%
+                                    {{ $item->daily_interest }}%
                                 </td>
-                                <td class="fw-semibold">
-                                    ${{ $item->amount }}
+                                <td class="d-none d-sm-table-cell">
+                                    ${{ $item->min_deposit }}
+                                </td>
+                                <td class="d-none d-sm-table-cell">
+                                    ${{ $item->max_deposit }}
                                 </td>
                                 <td class="text-center">
                                     <div class="btn-group">

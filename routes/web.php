@@ -83,6 +83,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'user', 'as' => 'user.'], fu
     Route::get('subscription/history', "SubscribeController@history")->name('sub.history');
     Route::get('subscription/details/{id}', "SubscribeController@details")->name('sub.details');
     Route::post('process/subscription/plans', "SubscribeController@subscribe")->name('subscribe');
+    Route::get('investment/details/{id}', "SubscribeController@Investdetails")->name('Investdetails');
     Route::get('subscription/success/{id}', "SubscribeController@Subsuccess")->name('Subsuccess');
 
     Route::resource('message', "MessageController");

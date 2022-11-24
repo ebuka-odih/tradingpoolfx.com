@@ -103,7 +103,7 @@
                     </a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-th"></i><a href="{{ route('user.deposit') }}">Fund Account</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="/Identity/Account/Manage/InvestFund">Invest Fund</a></li>
+                        <li><i class="menu-icon fa fa-th"></i><a href="{{ route('user.sub.plans') }}">Invest Fund</a></li>
                         <li><i class="menu-icon fa fa-th"></i><a href="/Identity/Account/Manage/RefundInvestment">Refund Investment</a></li>
                     </ul>
                 </li>
