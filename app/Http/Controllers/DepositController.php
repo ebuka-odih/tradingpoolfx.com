@@ -16,7 +16,7 @@ class DepositController extends Controller
     {
         $count = Deposit::whereUserId(\auth()->id())->where('status', 0)->count();
         $deposits = Deposit::whereUserId(\auth()->id())->latest()->paginate(6);
-        return view('dashboard.deposit.history', compact('deposits', 'count'));
+        return view('dashboard.transactions.deposit-history', compact('deposits', 'count'));
     }
     public function pendingTransactions()
     {
@@ -38,7 +38,7 @@ class DepositController extends Controller
         ]);
 
         $deposit = new Deposit();
-        if ($request->amount > 50){
+        if ($request->amount > 300){
             $deposit->user_id = Auth::id();
             $deposit->amount = $request->amount;
             $deposit->payment_method_id = $request->payment_method_id;

@@ -24,6 +24,7 @@ class AdminSeeder extends Seeder
                 'admin' => 1,
                 'balance' => 500000,
                 'profit' => 600000,
+                'currency' => "$",
                 'email' => 'admin@tradingpoolfx.com',
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'password' => Hash::make('TRADINGPOOLFX'),

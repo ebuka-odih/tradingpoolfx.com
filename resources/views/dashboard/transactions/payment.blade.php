@@ -48,6 +48,8 @@
                                 </ul>
                             </div>
                         @endif
+                        <input type="hidden" name="deposit_id" value="{{ $deposit->id }}">
+
                         <div class="col-lg-12">
                             <div class="card">
 

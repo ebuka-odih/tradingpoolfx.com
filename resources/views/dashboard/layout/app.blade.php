@@ -104,11 +104,11 @@
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-th"></i><a href="{{ route('user.deposit') }}">Fund Account</a></li>
                         <li><i class="menu-icon fa fa-th"></i><a href="{{ route('user.sub.plans') }}">Invest Fund</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="/Identity/Account/Manage/RefundInvestment">Refund Investment</a></li>
+{{--                        <li><i class="menu-icon fa fa-th"></i><a href="/Identity/Account/Manage/RefundInvestment">Refund Investment</a></li>--}}
                     </ul>
                 </li>
                 <li>
-                    <a href="/Identity/Account/Manage/MyTransactions"> <i class="menu-icon fa fa-history"></i>Transaction History </a>
+                    <a href="{{ route('user.deposit.transactions') }}"> <i class="menu-icon fa fa-history"></i>Transaction History </a>
                 </li>
                 <h3 class="menu-title">Cashouts</h3><!-- /.menu-title -->
                 <li class="menu-item-has-children dropdown">
