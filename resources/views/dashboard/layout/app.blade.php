@@ -93,7 +93,7 @@
                     </a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-table"></i><a href="{{ route('user.account') }}">My Credit Accounts</a></li>
-                        <li><i class="fa fa-table"></i><a href="/Identity/Account/Manage/MyInvestments">My Investments</a></li>
+                        <li><i class="fa fa-table"></i><a href="{{ route('user.sub.history') }}">My Investments</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
@@ -117,7 +117,7 @@
                         My Wallet
                     </a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-fort-awesome"></i><a href="/Identity/Account/Manage/WithdrawEarnings">Withdraw Earnings</a></li>
+                        <li><i class="menu-icon fa fa-fort-awesome"></i><a href="{{ route('user.withdraw') }}">Withdraw Earnings</a></li>
                         <li><i class="menu-icon ti-themify-logo"></i><a href="/Identity/Account/Manage/WithdrawCapital">Withdraw Capital</a></li>
                     </ul>
                 </li>

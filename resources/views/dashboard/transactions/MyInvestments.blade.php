@@ -51,18 +51,19 @@
                                         <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Maturity: activate to sort column ascending" style="width: 125px;">Maturity</th>
                                         <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Duration (Days): activate to sort column ascending" style="width: 211px;">Duration (Days)</th>
                                         <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 101px;">Status</th>
+                                        <th class="sorting" tabindex="0" aria-controls="bootstrap-data-table-export" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 101px;">Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($deposits as $item)
+                                    @foreach($sub as $item)
                                         <tr class="odd">
-                                            <td>{{ date('d M, Y', strtotime($item->created_at)) }}</td>
-                                            <td>{{ $item->user->currency }}{{ $item->amount }}</td>
-                                            <td>{{ $item->payment_method->name }}</td>
+                                            <td>{{$item->subscription->name }}</td>
+                                            <td>{{ date('d M, y', strtotime($item->updated_at)) }}</td>
+                                            <td>{{ date('d M, y', strtotime( $item->ending_date() )) }}</td>
+                                            <td>{{$item->subscription->term_days }} Day(s)</td>
                                             <td>{!! $item->status() !!}</td>
-                                            @if($item->status == 0)
-                                                <td><a href="{{ route('user.payment', $item->id) }}" class="btn btn-primary">Update</a></td>
-                                            @endif
+                                            <td><a href="{{ route('user.Investdetails', $item->id) }}" class="btn btn-primary">View</a></td>
+
                                         </tr>
                                     @endforeach
                                     </tbody>

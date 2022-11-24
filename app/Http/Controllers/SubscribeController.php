@@ -19,24 +19,30 @@ class SubscribeController extends Controller
 
     public function subscribe(Request $request)
     {
-        $invest = new Subscribe();
+        $request->validate([
+            'amount' => 'required'
+        ]);
+        $sub_id = $request->subscription_id;
+        $plan_id = Subscription::findOrFail($sub_id);
+        $sub = new Subscribe();
         if ($request->amount < \auth()->user()->balance){
-            $plan_id = Subscription::findOrFail($request->subscription_id);
+//            $plan_id = Package::findOrFail($request->package_id);
             if ($request->get('amount') < $plan_id->min_deposit || $request->get('amount') > $plan_id->max_deposit)
             {
                 return redirect()->back()->with('declined', "Please enter the amount within the Min/Max Deposit");
             }else{
-                $invest->subscription_id = $request->subscription_id;
-                $invest->user_id = Auth::id();
-                $invest->amount = $request->amount;
-                $invest->status = 1;
-                $invest->save();
-                return redirect()->route('user.Investdetails', $invest->id);
+                $sub->subscription_id = $request->subscription_id;
+                $sub->user_id = Auth::id();
+                $sub->amount = $request->amount;
+                $sub->status = 1;
+                $sub->save();
+                return redirect()->route('user.investmentDetails', $sub->id);
             }
         }
-        return redirect()->back()->with('insufficient', "Error! Your investable account balance is lower than the amount you've entered.");
+        return redirect()->back()->with('insufficient', "Sorry! You do not have upto that amount in your balance");
 
     }
+
 
     public function Investdetails($id){
         $sub = Subscribe::findOrFail($id);
@@ -53,7 +59,7 @@ class SubscribeController extends Controller
     public function history()
     {
         $sub = Subscribe::whereUserId(\auth()->id())->get();
-        return view('dashboard.subscription.history', compact('sub'));
+        return view('dashboard.transactions.MyInvestments', compact('sub'));
     }
 
 //    public function Investdetails($id){

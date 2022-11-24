@@ -31,23 +31,25 @@
 
                     @csrf
                         @method('PATCH')
-                        @if(session()->has('success'))
-                            <div class="alert alert-success alert-dismissible fade show">
-                                {{ session()->get('success') }}
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        @endif
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
+                       <div class="container">
+                           @if(session()->has('success'))
+                               <div class="alert alert-success alert-dismissible fade show">
+                                   {{ session()->get('success') }}
+                                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                       <span aria-hidden="true">&times;</span>
+                                   </button>
+                               </div>
+                           @endif
+                           @if ($errors->any())
+                               <div class="alert alert-danger">
+                                   <ul>
+                                       @foreach ($errors->all() as $error)
+                                           <li>{{ $error }}</li>
+                                       @endforeach
+                                   </ul>
+                               </div>
+                           @endif
+                       </div>
                         <input type="hidden" name="deposit_id" value="{{ $deposit->id }}">
 
                         <div class="col-lg-12">

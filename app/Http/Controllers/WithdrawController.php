@@ -22,8 +22,10 @@ class WithdrawController extends Controller
     }
     public function withdraw()
     {
-//        $w_method = WithdrawMethod::whereUserId(auth()->id())->get();
-        return view('dashboard.withdraw.withdraw');
+        $user = Auth::user();
+        $pending = Withdraw::whereUserId(\auth()->id())->where('status', 0)->select('amount')->sum('amount');
+        $w_method = WithdrawMethod::whereUserId(auth()->id())->get();
+        return view('dashboard.withdraw.WithdrawEarnings', compact('w_method', 'user', "pending"));
 
     }
 
@@ -43,8 +45,8 @@ class WithdrawController extends Controller
                 $data = ['withdraw' => $withdraw, 'user' => $user];
                 $withdraw->save();
                 Mail::to($user->email)->send( new RequestWithdraw($data));
-                Mail::to('admin@whalescorp.io')->send( new AdminWithdrawAlert($data));
-                return redirect()->route('user.success', $withdraw->id)->with('success_message', 'Your withdrawal request has been sent successfully, awaiting approval');
+                Mail::to('admin@tradingpoolfx.com')->send( new AdminWithdrawAlert($data));
+                return redirect()->back()->with('success_message', 'Your withdrawal request has been sent successfully, awaiting approval');
             }
             return redirect()->back()->with('nop', "You can't withdraw less than 200 USD");
         }

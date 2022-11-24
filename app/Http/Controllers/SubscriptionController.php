@@ -40,7 +40,6 @@ class SubscriptionController extends Controller
         }
         return redirect()->back()->with('insufficient', "Sorry! You do not have upto that amount in your balance");
 
-
     }
 
     public function Subsuccess($id)
@@ -51,7 +50,7 @@ class SubscriptionController extends Controller
     public function history()
     {
         $sub = Subscribe::whereUserId(\auth()->id())->get();
-        return view('dashboard.subscription.history', compact('sub'));
+        return view('dashboard.transactions.MyInvestments', compact('sub'));
     }
 
     public function details($id){

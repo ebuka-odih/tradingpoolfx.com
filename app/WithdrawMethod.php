@@ -15,4 +15,9 @@ class WithdrawMethod extends Model
         }
         return "Not Active";
     }
+
+    public function withdraw()
+    {
+        return $this->hasMany(Withdraw::class, "withdraw_method_id");
+    }
 }
