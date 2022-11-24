@@ -30,7 +30,7 @@
                     <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
                     <div class="stat-content dib">
                         <div class="stat-text">My Funds</div>
-                        <div class="stat-digit">{{ $user->currency ? : "$" }}{{ $user->balance }}</div>
+                        <div class="stat-digit">{{ $user->currency ? : "$" }}{{ $user->balance ? : "0.00" }}</div>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     <div class="stat-icon dib"><i class="ti-layout-grid2 text-primary border-primary"></i></div>
                     <div class="stat-content dib">
                         <div class="stat-text">My Investments</div>
-                        <div class="stat-digit">{{ $user->currency ? : "$" }}{{ $investment }}</div>
+                        <div class="stat-digit">{{ $user->currency ? : "$" }}{{ $investment ? : "0.00" }}</div>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                     <div class="stat-icon dib"><i class="ti-stats-up text-warning border-warning"></i></div>
                     <div class="stat-content dib">
                         <div class="stat-text">My Profit</div>
-                        <div class="stat-digit">{{ $user->currency }}{{ $user->profit }}</div>
+                        <div class="stat-digit">{{ $user->currency }}{{ $user->profit ? : "0.00" }}</div>
                     </div>
                 </div>
             </div>
