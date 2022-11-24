@@ -54,10 +54,19 @@ class WithdrawController extends Controller
 
     }
 
+    public function WithdrawCapital()
+    {
+        $user = Auth::user();
+        $w_method = WithdrawMethod::whereUserId(auth()->id())->get();
+        $pending = Withdraw::whereUserId(\auth()->id())->where('status', 0)->select('amount')->sum('amount');
+        return view('dashboard.withdraw.WithdrawCapital', compact('w_method', 'pending', 'user'));
+    }
+
     public function success($id)
     {
+        $user = Auth::user();
         $withdraw = Withdraw::findOrFail($id);
-        return view('dashboard.withdraw.success', compact('withdraw'));
+        return view('dashboard.withdraw.success', compact('withdraw', 'user'));
     }
 
     public function cancelWithdraw($id)

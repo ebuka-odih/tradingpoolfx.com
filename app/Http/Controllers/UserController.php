@@ -20,12 +20,11 @@ class UserController extends Controller
         $user = Auth::user();
         $withdrawal = Withdraw::whereUserId(\auth()->id())->where('status', 1)->sum('amount');
         $deposits = Deposit::whereUserId(\auth()->id())->where('status', 1)->sum('amount');
-        $trade = Trade::whereUserId(\auth()->id())->where('status', 1)->sum('amount');
-        $loss = Funding::whereUserId(\auth()->id())->select('type', 'Loss')->where('status', 1)->sum('amount');
 
         $bonus = Funding::whereUserId(\auth()->id())->select('type', 'Bonus')->where('status', 1)->sum('amount');
         $bonus2 = Funding::whereUserId(\auth()->id())->select('type', 'Referral-Bonus')->where('status', 1)->sum('amount');
-        return view('dashboard.index', compact('trade', 'deposits', 'withdrawal', 'loss', 'bonus', 'bonus2', 'user'));
+        $investment = Subscribe::whereUserId(\auth()->id())->where('status', 1)->sum('amount');
+        return view('dashboard.index', compact('deposits', 'withdrawal','bonus', 'bonus2', 'user', 'investment'));
     }
 
     public function profile()

@@ -118,7 +118,7 @@
                     </a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="menu-icon fa fa-fort-awesome"></i><a href="{{ route('user.withdraw') }}">Withdraw Earnings</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="/Identity/Account/Manage/WithdrawCapital">Withdraw Capital</a></li>
+                        <li><i class="menu-icon ti-themify-logo"></i><a href="{{ route('user.WithdrawCapital') }}">Withdraw Capital</a></li>
                     </ul>
                 </li>
                 <li>
@@ -144,23 +144,26 @@
                     <div id="ytWidget" style="display:none;"></div>
                     <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=tr&widgetTheme=dark&autoMode-true" type="text/javascript"></script>
                 </div>
+
             </div>
 
             <div class="col-sm-5">
+                <div id="google_translate_element"></div>
                 <div class="user-area dropdown float-right">
 
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <h3>TradingPoolFX</h3>
+
+{{--                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--                        <h3>TradingPoolFX</h3>--}}
 {{--                        <img src="/images/noimage.png" alt="..." style="width:40px; height:40px;" class="user-avatar rounded-circle">--}}
-                    </a>
+{{--                    </a>--}}
 
                     <div class="user-menu dropdown-menu">
                         <a class="nav-link" href="/Identity/Account/Manage/PersonalData">My Profile</a>
                         <a class="nav-link" href="/Identity/Account/Manage/ChanagePassword">Change Password</a>
-                        <a class="nav-link" href="/Identity/Account/Manage/Email">Manage Email</a>
                         <form method="post" action="/Identity/Account/Logout">
                             <button type="submit" class="nav-link dropdown-item">Logout</button>
-                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DT1a3CTqnpCgig_T_wqfVkVFb_wx369Ka-LzjmU1gjxx_Aglg7cdC4F-amUb_QV0Js-mv4ZEiN1a6A906J36xPauJAHXEWepPE6u02KdhIvNSFyVTEt5zGCuCfazHP_mjhqf4VBA1B5OGbpMyKf-007Mx-WbaStr9MA52t62SgVYJTwcn2B8hrS-iAGa4_Thg" /></form>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DT1a3CTqnpCgig_T_wqfVkVFb_wx369Ka-LzjmU1gjxx_Aglg7cdC4F-amUb_QV0Js-mv4ZEiN1a6A906J36xPauJAHXEWepPE6u02KdhIvNSFyVTEt5zGCuCfazHP_mjhqf4VBA1B5OGbpMyKf-007Mx-WbaStr9MA52t62SgVYJTwcn2B8hrS-iAGa4_Thg" />
+                        </form>
                     </div>
                 </div>
 
@@ -180,6 +183,13 @@
 
 </div><!-- /#right-panel -->
 
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script src="{{ asset('assets/js/jquery-2.1.4.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>

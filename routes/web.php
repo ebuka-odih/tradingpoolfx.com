@@ -70,8 +70,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'user', 'as' => 'user.'], fu
     Route::get('withdraw/transactions', "WithdrawController@transactions")->name('withdraw.transactions');
     Route::get('withdraw', "WithdrawController@withdraw")->name('withdraw');
     Route::post('withdraw', "WithdrawController@processWithdraw")->name('processWithdraw');
-    Route::get('withdraw/success/RETWYR432{id}3TYW5T', "WithdrawController@success")->name('success');
-    Route::get('cancelled/withdrawal/XCRTRD{id}ERTX8F&', "WithdrawController@cancelWithdraw")->name('cancelWithdraw');
+    Route::get('WithdrawCapital', "WithdrawController@WithdrawCapital")->name('WithdrawCapital');
 
 
     Route::get('trade-room', "TradeController@trade")->name('trade');

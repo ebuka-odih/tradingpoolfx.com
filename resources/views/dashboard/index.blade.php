@@ -37,13 +37,13 @@
     </div>
 
     <div class="col-lg-6 col-md-6">
-        <a href="/Identity/Account/Manage/InvestFund" class="card" title="Click here to make investment">
+        <a href="{{ route('user.sub.plans') }}" class="card" title="Click here to make investment">
             <div class="card-body">
                 <div class="stat-widget-one">
                     <div class="stat-icon dib"><i class="ti-layout-grid2 text-primary border-primary"></i></div>
                     <div class="stat-content dib">
                         <div class="stat-text">My Investments</div>
-                        <div class="stat-digit">$0.00</div>
+                        <div class="stat-digit">{{ $user->currency ? : "$" }}{{ $investment }}</div>
                     </div>
                 </div>
             </div>
