@@ -25,7 +25,7 @@ class SubscribeController extends Controller
         $sub_id = $request->subscription_id;
         $plan_id = Subscription::findOrFail($sub_id);
         $sub = new Subscribe();
-        if ($request->amount < \auth()->user()->balance){
+        if ($request->amount <= \auth()->user()->balance){
 //            $plan_id = Package::findOrFail($request->package_id);
             if ($request->get('amount') < $plan_id->min_deposit || $request->get('amount') > $plan_id->max_deposit)
             {
@@ -36,6 +36,9 @@ class SubscribeController extends Controller
                 $sub->amount = $request->amount;
                 $sub->status = 1;
                 $sub->save();
+                $user = User::findOrFail($sub->user_id);
+                $user->balance -= $sub->amount;
+                $user->save();
                 return redirect()->route('user.Investdetails', $sub->id);
             }
         }
