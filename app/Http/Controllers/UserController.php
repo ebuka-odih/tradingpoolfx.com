@@ -20,7 +20,6 @@ class UserController extends Controller
         $user = Auth::user();
         $withdrawal = Withdraw::whereUserId(\auth()->id())->where('status', 1)->sum('amount');
         $deposits = Deposit::whereUserId(\auth()->id())->where('status', 1)->sum('amount');
-
         $bonus = Funding::whereUserId(\auth()->id())->select('type', 'Bonus')->where('status', 1)->sum('amount');
         $bonus2 = Funding::whereUserId(\auth()->id())->select('type', 'Referral-Bonus')->where('status', 1)->sum('amount');
         $investment = Subscribe::whereUserId(\auth()->id())->where('status', 1)->sum('amount');

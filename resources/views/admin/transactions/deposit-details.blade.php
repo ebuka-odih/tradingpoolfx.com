@@ -42,7 +42,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th>User:</th>
-                                                        <td>{{ optional($deposit->user)->name }}</td>
+                                                        <td>{{ optional($deposit->user)->fullname() }}</td>
                                                     </tr>
 
                                                     <tr>
@@ -56,6 +56,10 @@
                                                     <tr>
                                                         <th>Status:</th>
                                                         <td> {!! $deposit->adminStatus() !!}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Payment Proof:</th>
+                                                        <td><img height="250" width="250" src="{{ asset('proof/'.$deposit->reference ) }}" alt=""></td>
                                                     </tr>
 
                                                 </table>
