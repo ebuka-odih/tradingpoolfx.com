@@ -52,7 +52,7 @@
     </div>
 
     <div class="col-lg-6 col-md-6">
-        <a href="/Identity/Account/Manage/ProfitHistory" class="card" title="Click here to see profit history">
+        <a  class="card" title="Click here to see profit history">
             <div class="card-body">
                 <div class="stat-widget-one">
                     <div class="stat-icon dib"><i class="ti-stats-up text-warning border-warning"></i></div>
@@ -66,13 +66,13 @@
     </div>
 
     <div class="col-lg-6 col-md-6">
-        <a href="/Identity/Account/Manage/MyTransactions" class="card" title="Click here to see transaction history">
+        <a  class="card" title="Click here to see transaction history">
             <div class="card-body">
                 <div class="stat-widget-one">
                     <div class="stat-icon dib"><i class="ti-link text-danger border-danger"></i></div>
                     <div class="stat-content dib">
                         <div class="stat-text">My Money</div>
-                        <div class="stat-digit">$0.00</div>
+                        <div class="stat-digit">{{ $user->currency }}0.00</div>
                     </div>
                 </div>
             </div>
