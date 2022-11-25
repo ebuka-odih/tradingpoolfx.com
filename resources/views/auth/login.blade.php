@@ -24,7 +24,7 @@
     <div class="main-agileinfo">
         <div class="agileits-top">
             <a href="{{ route('index') }}" >
-                <img src="" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />
+                <img src="{{ asset('img/logo1.png') }}" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />
             </a>
             <form action="{{ route('login') }}" method="POST">
                 @csrf
