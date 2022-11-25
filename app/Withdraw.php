@@ -54,4 +54,12 @@ class Withdraw extends Model
             ->get();
         return $btc * $this->amount;
     }
+
+    public function account()
+    {
+        if ($this->account == "Main-Balance"){
+            return "Main Balance";
+        }
+        return "Profit Balance";
+    }
 }

@@ -45,7 +45,7 @@
                                                 <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">Amount</th>
                                                 {{--                                            <th class="d-none d-sm-table-cell sorting"  tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending">Payment Detail</th>--}}
                                                 <th  class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Registered: activate to sort column ascending">Status</th>
-                                                <th  class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Registered: activate to sort column ascending">Progress</th>
+                                                <th  class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Registered: activate to sort column ascending">Account</th>
                                                 <th  class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Registered: activate to sort column ascending">Action</th>
                                             </tr>
                                             </thead>
@@ -53,11 +53,11 @@
                                             @foreach($withdrawal as $item)
                                                 <tr class="odd">
                                                     <td class="fw-semibold"> {{ date('d-M-y', strtotime($item->created_at)) }}</td>
-                                                    <td class="fw-semibold">{{ $item->user['name'] }} (@convert($item->user['balance']))</td>
+                                                    <td class="fw-semibold">{{ optional($item->user)->fullname() }} </td>
                                                     <td class="fw-semibold">$ {{ $item->amount }}</td>
                                                     {{--                                                <td class="d-none d-sm-table-cell"> {{ $item->withdraw_method->acctLabel() }}</td>--}}
                                                     <td class="d-none d-sm-table-cell"> {!! $item->adminStatus() !!}</td>
-                                                    <td class="d-none d-sm-table-cell text-success"> {{ $item->percent }}%</td>
+                                                    <td class="d-none d-sm-table-cell text-success"> {{ $item->account() }}</td>
                                                     <td>
                                                         @if($item->status == 0)
                                                             <a type="button" class="btn btn-sm btn-primary push" data-bs-toggle="modal" data-bs-target="#modal-block-popin{{ $item->id }}">Action</a>
@@ -96,27 +96,9 @@
                                                                         {{--                            @method('PATCH')--}}
 
                                                                         {{--                                                                                <input type="hidden" name="trade_id" value="{{ $item->id }}">--}}
-                                                                        <div class="row">
-                                                                            <div class="col-lg-12">
-                                                                                <label for="">Select Percent</label>
-                                                                                <select name="percent" id="" class="form-control">
-                                                                                    <option value="10">10%</option>
-                                                                                    <option value="20">20%</option>
-                                                                                    <option value="30">30%</option>
-                                                                                    <option value="40">40%</option>
-                                                                                    <option value="50">50%</option>
-                                                                                    <option value="60">60%</option>
-                                                                                    <option value="70">70%</option>
-                                                                                    <option value="80">80%</option>
-                                                                                    <option value="90">90%</option>
-                                                                                    <option value="100">100%</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
+
                                                                         <div class="row mt-3">
-                                                                            <div class="col-lg-6">
-                                                                                <button type="submit" class="btn btn-primary col-lg-6 mt-2">Update</button>
-                                                                            </div>
+
                                                                             <div class="col-lg-6">
                                                                                 <a href="{{ route('admin.approve_withdrawal', $item->id) }}" class="btn btn-success">Approve</a>
                                                                             </div>

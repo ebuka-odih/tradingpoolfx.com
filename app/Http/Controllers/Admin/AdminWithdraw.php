@@ -20,9 +20,16 @@ class AdminWithdraw extends Controller
     public function approve_withdrawal($id)
     {
         $withdraw = Withdraw::findOrFail($id);
-        $withdraw->status = 1;
         $user = User::findOrFail($withdraw->user_id);
-        $user->balance -= $withdraw->amount;
+        if ($withdraw->account == "Main-Balance"){
+            $user->balance -= $withdraw->amount;
+            $withdraw->status = 1;
+            $user->save();
+            $withdraw->save();
+            Mail::to($user->email)->send(new ApproveWithdraw($withdraw));
+        }
+        $user->profit -= $withdraw->amount;
+        $withdraw->status = 1;
         $user->save();
         $withdraw->save();
         Mail::to($user->email)->send(new ApproveWithdraw($withdraw));

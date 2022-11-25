@@ -61,8 +61,8 @@
 
                                                     <tr>
                                                         <td class="text-center">
-                                                            {{ optional($item->user)->name }}<br>
-                                                            (@convert(optional($item->user)->balance))
+                                                            {{ optional($item->user)->fullname() }}<br>
+
                                                         </td>
                                                         <td class="fw-semibold">
                                                             {{ date('d-M-y', strtotime($item->created_at)) }}

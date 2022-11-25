@@ -92,6 +92,23 @@
                                                 <hr>
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="Account">Account to Withdraw From</label>
+                                                    <select class="form-control form-control" id="Account" data-val="true" data-val-required="The Address field is required." name="account">
+                                                        <option value="NA">Please Select an Account</option>
+
+                                                            <option value="Main-Balance">
+                                                                Main Bal ({{ $user->balance }})
+                                                            </option>
+                                                        <option value="Profit-Balance">
+                                                               Profit Bal ({{ $user->profit }})
+                                                            </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-12">
