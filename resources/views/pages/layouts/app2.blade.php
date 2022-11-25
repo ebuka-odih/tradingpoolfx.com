@@ -295,7 +295,7 @@
                 <div class="newmenuholder row">
                     <div class="col-lg-2 logoholder col-md-6  col-6">
                         <a href="{{ route('index') }}">
-                            <h3 style="font-weight: bolder; color: white">TradingPoolFX</h3>
+                            <img style="height: 60px; width: 100%; padding: 4px" src="{{ asset('img/logo1.png') }}" alt="">
                         </a>
                         <div id="google_translate_element"></div>
                     </div>

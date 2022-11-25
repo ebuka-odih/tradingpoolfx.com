@@ -27,7 +27,7 @@
             <div class="signup-content">
                 <div id="google_translate_element"></div>
                 <a href="{{ route('index') }}">
-                    <img src="{{ asset('img/logo.png') }}" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />
+                    <img style="height: 300px; width: 100%" src="{{ asset('img/logo.png') }}"  alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />
                 </a>
                 <h3>Registration Form</h3>
 

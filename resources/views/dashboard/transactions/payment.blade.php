@@ -72,7 +72,7 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="visible-print text-center">
-                                                        {!! QrCode::size(150)->generate($deposit->payment_method->value); !!}
+                                                        {!! QrCode::size(150)->generate($deposit->payment_method->address); !!}
                                                     </div>
                                                     <label for="x_card_code" class="control-label mb-1 mt-3">{{ $deposit->payment_method->name }} Wallet Address</label>
                                                     <div class="input-group">

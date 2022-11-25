@@ -45,10 +45,10 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="{{ route('user.dashboard') }}">
-               <h3>TradingPoolFX</h3>
+                <img height="80" src="{{ asset('img/logo1.png') }}" alt="">
             </a>
             <a class="navbar-brand hidden" href="{{ route('user.dashboard') }}">
-                <h3>TradingPoolFX</h3>
+                <img height="80" src="{{ asset('img/logo1.png') }}" alt="">
             </a>
         </div>
 
@@ -152,18 +152,27 @@
                 <div class="user-area dropdown float-right">
 
 
-{{--                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 {{--                        <h3>TradingPoolFX</h3>--}}
-{{--                        <img src="/images/noimage.png" alt="..." style="width:40px; height:40px;" class="user-avatar rounded-circle">--}}
-{{--                    </a>--}}
+                        <img src="{{ asset('img/noimage.png') }}" alt="..." style="width:40px; height:40px;" class="user-avatar rounded-circle">
+                    </a>
 
                     <div class="user-menu dropdown-menu">
                         <a class="nav-link" href="/Identity/Account/Manage/PersonalData">My Profile</a>
                         <a class="nav-link" href="/Identity/Account/Manage/ChanagePassword">Change Password</a>
-                        <form method="post" action="/Identity/Account/Logout">
-                            <button type="submit" class="nav-link dropdown-item">Logout</button>
-                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DT1a3CTqnpCgig_T_wqfVkVFb_wx369Ka-LzjmU1gjxx_Aglg7cdC4F-amUb_QV0Js-mv4ZEiN1a6A906J36xPauJAHXEWepPE6u02KdhIvNSFyVTEt5zGCuCfazHP_mjhqf4VBA1B5OGbpMyKf-007Mx-WbaStr9MA52t62SgVYJTwcn2B8hrS-iAGa4_Thg" />
+                        <a class="nav-link dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
                         </form>
+{{--                        <form method="post" action="/Identity/Account/Logout">--}}
+{{--                            <button type="submit" class="nav-link dropdown-item">Logout</button>--}}
+{{--                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DT1a3CTqnpCgig_T_wqfVkVFb_wx369Ka-LzjmU1gjxx_Aglg7cdC4F-amUb_QV0Js-mv4ZEiN1a6A906J36xPauJAHXEWepPE6u02KdhIvNSFyVTEt5zGCuCfazHP_mjhqf4VBA1B5OGbpMyKf-007Mx-WbaStr9MA52t62SgVYJTwcn2B8hrS-iAGa4_Thg" />--}}
+{{--                        </form>--}}
                     </div>
                 </div>
 
