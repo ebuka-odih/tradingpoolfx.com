@@ -273,6 +273,45 @@
         }
     </style>
 
+    <style>
+        #google_translate_element {
+
+            color: transparent;
+        }
+
+        #google_translate_element a {
+
+            display: none;
+        }
+
+        select.google_translate_element {
+
+            color: black;
+        }
+
+        div.goog-te-gadget {
+
+            color: transparent;
+        }
+
+        div.goog-te-gadget {
+
+            color: transparent !important;
+        }
+
+        .goog-te-gadget .goog-te-combo {
+
+            margin: 0px 0 !important;
+            padding: 6px 5px;
+            background: #1d1d1d;
+            border: 1px solid #feb729;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+
 </head>
 <body class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-5 ">
 <div class="header1">
@@ -586,20 +625,6 @@
 </div><!-- #page -->
 
 
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+1(501)3025133", // WhatsApp number
-            call_to_action: "Message us", // Call to action
-            button_color: "#FF6550", // Color of button
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
 <script src="{{ asset('LIVECHAT.js') }}" async></script>
 <script type="text/javascript">
     function googleTranslateElementInit() {
