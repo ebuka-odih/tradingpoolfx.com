@@ -333,10 +333,11 @@
             <div class="container">
                 <div class="newmenuholder row">
                     <div class="col-lg-2 logoholder col-md-6  col-6">
+                        <div id="google_translate_element"></div>
                         <a href="{{ route('index') }}">
                             <img style="height: 60px; width: 100%; padding: 4px" src="{{ asset('img/logo1.png') }}" alt="">
                         </a>
-                        <div id="google_translate_element"></div>
+
                     </div>
                     <div class="col-lg-5 menu menu21 ">
                         <div class="menu-new-menu-container"><ul id="menu-new-menu" class="menu"><li id="menu-item-3160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3160"><a>Markets</a>
