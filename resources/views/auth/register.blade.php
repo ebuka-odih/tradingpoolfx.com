@@ -25,10 +25,14 @@
         <!-- <img src="images/signup-bg.jpg" alt=""> -->
         <div class="container">
             <div class="signup-content">
+                <div id="google_translate_element"></div>
                 <a href="{{ route('index') }}">
-{{--                    <img src="images/logo.png" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />--}}
+                    <img src="{{ asset('img/logo.png') }}" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />
                 </a>
                 <h3>Registration Form</h3>
+
+
+
                 <form class="account-form" id="recaptchaForm" action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @if ($errors->any())
@@ -379,6 +383,15 @@
     </section>
 
 </div>
+
+<script src="{{ asset('LIVECHAT.js') }}" async></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <!-- JS -->
 <script src="vendor/jquery/jquery.min.js"></script>

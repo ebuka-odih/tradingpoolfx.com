@@ -22,6 +22,7 @@
 <div class="main-w3layouts wrapper">
     <h1>Login</h1>
     <div class="main-agileinfo">
+        <div id="google_translate_element"></div>
         <div class="agileits-top">
             <a href="{{ route('index') }}" >
                 <img src="{{ asset('img/logo1.png') }}" alt="Metrics Trade Plc" title="" class="img-fluid auth__logo" />
@@ -70,6 +71,15 @@
     }
 </script>
 </body>
+
+<script src="{{ asset('LIVECHAT.js') }}" async></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <!-- Mirrored from www.metricstrade.com/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Nov 2022 23:05:19 GMT -->
 </html>
