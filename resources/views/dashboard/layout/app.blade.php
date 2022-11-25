@@ -45,7 +45,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="{{ route('user.dashboard') }}">
-                <img height="80" src="{{ asset('img/logo1.png') }}" alt="">
+                <img style="height: 60px; width: 100%; padding: 4px" src="{{ asset('img/logo1.png') }}" alt="">
             </a>
             <a class="navbar-brand hidden" href="{{ route('user.dashboard') }}">
                 <img height="80" src="{{ asset('img/logo1.png') }}" alt="">
