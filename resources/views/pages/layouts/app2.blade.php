@@ -302,8 +302,9 @@
         .goog-te-gadget .goog-te-combo {
 
             margin: 0px 0 !important;
-            padding: 6px 5px;
+            /*padding: 6px 5px;*/
             background: #1d1d1d;
+            height: 20px;
             border: 1px solid #feb729;
             color: #ffffff;
             border-radius: 5px;
@@ -333,14 +334,15 @@
             <div class="container">
                 <div class="newmenuholder row">
                     <div class="col-lg-2 logoholder col-md-6  col-6">
-                        <div id="google_translate_element"></div>
+
                         <a href="{{ route('index') }}">
                             <img style="height: 60px; width: 100%; padding: 4px" src="{{ asset('img/logo1.png') }}" alt="">
                         </a>
 
                     </div>
                     <div class="col-lg-5 menu menu21 ">
-                        <div class="menu-new-menu-container"><ul id="menu-new-menu" class="menu"><li id="menu-item-3160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3160"><a>Markets</a>
+                        <div class="menu-new-menu-container">
+                            <ul id="menu-new-menu" class="menu"><li id="menu-item-3160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3160"><a>Markets</a>
                                     <ul class="sub-menu">
                                         <li id="menu-item-3164" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3164"><a>Markets to trade</a>
                                             <ul class="sub-menu">
@@ -431,8 +433,10 @@
                     <div class="col-lg-5 col-6 col-md-6 rightbuttons">
                         <div class="buttonsrighth">
                             <div id="right-menu-navigation" class="navbar-collapse">
+
                                 <ul id="right-nav" class="header_buttons">
-                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="account menu-item menu-item-type-custom menu-item-object-custom menu-item-12 nav-item"><a title="Log in" href="loan_form" class="nav-link">Loans</a></li>
+
+                                    <li itemscope="itemscope"  id="menu-item-12" class="account menu-item menu-item-type-custom menu-item-object-custom menu-item-12 nav-item"> <div id="google_translate_element"></div></li>
                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="account menu-item menu-item-type-custom menu-item-object-custom menu-item-12 nav-item"><a title="Log in" href="{{ route('login') }}" class="nav-link">Log in</a></li>
                                     <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="register menu-item menu-item-type-custom menu-item-object-custom menu-item-13 nav-item"><a style="background-color: #2dba69" title="Create Account" href="{{ route('register') }}" class="nav-link">Create Account</a></li>
 {{--                                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="register menu-item menu-item-type-custom menu-item-object-custom menu-item-13 nav-item"> <div id="google_translate_element"></div></li>--}}
