@@ -38,7 +38,7 @@ class DepositController extends Controller
         ]);
 
         $deposit = new Deposit();
-        if ($request->amount > 300){
+        if ($request->amount >= 300){
             $deposit->user_id = Auth::id();
             $deposit->amount = $request->amount;
             $deposit->payment_method_id = $request->payment_method_id;
