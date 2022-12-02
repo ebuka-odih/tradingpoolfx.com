@@ -418,6 +418,7 @@
                           </span>
                         </div>
                     </div>
+                    
                     <div class="col-lg-5 col-6 col-md-6 rightbuttons">
                         <div class="buttonsrighth">
                             <div id="right-menu-navigation" class="navbar-collapse">

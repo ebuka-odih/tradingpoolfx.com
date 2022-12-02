@@ -46,7 +46,7 @@ class DepositController extends Controller
             Mail::to($deposit->user->email)->send(new DepositAlert($deposit));
             return redirect()->route('user.payment', $deposit->id);
         }
-        return redirect()->back()->with('declined', "You can only deposit 50 USD and above");
+        return redirect()->back()->with('declined', "You can only deposit 300 USD and above");
 
     }
 
