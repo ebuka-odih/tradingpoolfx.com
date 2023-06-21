@@ -38,16 +38,14 @@ class DepositController extends Controller
         ]);
 
         $deposit = new Deposit();
-        if ($request->amount < 1){
-            $deposit->user_id = Auth::id();
-            $deposit->amount = $request->amount;
-            $deposit->payment_method_id = $request->payment_method_id;
-            $deposit->save();
-            Mail::to($deposit->user->email)->send(new DepositAlert($deposit));
-            return redirect()->route('user.payment', $deposit->id);
-        }
-        return redirect()->back()->with('declined', "Your deposit could not be processed");
-
+        
+        $deposit->user_id = Auth::id();
+        $deposit->amount = $request->amount;
+        $deposit->payment_method_id = $request->payment_method_id;
+        $deposit->save();
+        Mail::to($deposit->user->email)->send(new DepositAlert($deposit));
+        return redirect()->route('user.payment', $deposit->id);
+       
     }
 
     public function payment($id)
